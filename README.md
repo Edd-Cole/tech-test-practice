@@ -18,7 +18,7 @@ The first directory you should see is __tests__. This is where the tests live fo
 ```http
 npm test [ADD_FILE_NAME_HERE]
 ```
-Next up are the functions, these will be where you can create the functions for the tests. YOU CAN CHANGE ANY PART OF THIS. You can even change the name or the parameters that go into the functions. Just make sure that if you do change the function name, you adjust the name else where in this repo.
+Next up are the functions, these will be where you can create the functions for the tests. This is where you will write your code. The functions are as bare as possible so you can build them up from scratch.
 
 Lastly, are the solutions. These are my solutions, annotated, so you can understand my thought process for each tech test. Try to tackle the tech tests on your own and only review my answers after you have succeeded in passing the tests, or have attempted multiple times. Trying once for 5 minutes and then looking at the answers isn't going to help you.
 
