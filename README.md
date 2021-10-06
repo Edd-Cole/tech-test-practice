@@ -46,3 +46,22 @@ Create a Stack class.
 A stack is a way of storing data. It is only open at one end and can only have items added or removed, one at a time, from that end. Like stacking bowls on top of each other.
 
 Oh, and no using pop or push because the tests are looking for an object! Have fun :)
+
+## 4. Create some Shapes Classes
+Even more classes, but probably not in the way we're used to. Here we're going to explore some super classes. This will help us get used to inheritance! I hope you enjoy this.
+### Task:
+Create a Shapes super class that will be the super class to a Cube and Sphere class.
+
+N.B. When the word abstract is used below, all it means is that the function is defined but does not contain a body. It is completely empty. Here is a <a href="https://stackoverflow.com/questions/597769/how-do-i-create-an-abstract-base-class-in-javascript">Stack Overflow</a> page that will help you for this!
+
+Our Shapes class is going to need the following:
+- An abstract constructor that takes a single length/radius (m) and a mass (kg),
+- An abstract Surface Area method,
+- An abstract Volume method,
+- A Density method,
+
+Our Cube and Sphere classes are going to need to define these things further:
+- A Constructor,
+- A Surface Area method,
+- A Volume method,
+- A Density method
