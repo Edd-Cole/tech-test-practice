@@ -12,7 +12,7 @@ describe("Stack", () => {
         expect(stack.hasOwnProperty("quantity")).toBe(true);
     });
 
-    test("Stack has a maxSize property that can be set as an argument or take a default value", () => {
+    test("Stack has a maxSize property that can be set as an argument or take a default value, default is 10", () => {
         const stack = new Stack();
         expect(stack.hasOwnProperty("maxSize")).toBe(true);
         expect(stack.maxSize).toBe(10);
@@ -23,7 +23,6 @@ describe("Stack", () => {
 
     test("Stack has a push method that adds data into storage when stack is not full", () => {
         const stack = new Stack(3);
-        expect(stack.hasOwnProperty("push")).toBe(true);
         expect(typeof(stack.push)).toBe("function");
         stack.push(1);
         expect(stack.storage[1]).toBe(1);
@@ -35,7 +34,6 @@ describe("Stack", () => {
 
     test("Stack has a pop method that removes the most recently added piece of data, provided stack is not empty", () => {
         const stack = new Stack(3);
-        expect(stack.hasOwnProperty("pop")).toBe(true);
         expect(typeof(stack.pop)).toBe("function");
         stack.push(1);
         stack.push(2);
@@ -46,7 +44,6 @@ describe("Stack", () => {
 
     test("Stack has an isEmpty method that tests whether the storage property is empty or not, returns boolean", () => {
         const stack = new Stack();
-        expect(stack.hasOwnProperty("isEmpty")).toBe(true);
         expect(typeof(stack.isEmpty)).toBe("function");
         expect(stack.isEmpty()).toBe(true);
         stack.push(1);
@@ -55,7 +52,6 @@ describe("Stack", () => {
 
     test("Stack has an isFull method that tests whether the storage property is full or not, returns boolean", () => {
         const stack = new Stack(1);
-        expect(stack.hasOwnProperty("isFull")).toBe(true);
         expect(typeof(stack.isFull)).toBe("function");
         expect(stack.isFull()).toBe(false);
         stack.push(1);
@@ -64,7 +60,6 @@ describe("Stack", () => {
 
     test("Stack has a peek method that returns the top value of the stack without popping it from the stack", () => {
         const stack = new Stack(5);
-        expect(stack.hasOwnProperty("peek")).toBe(true);
         expect(typeof(stack.peek)).toBe("function");
         stack.push(1);
         stack.push("dog");
