@@ -45,4 +45,4 @@ Create a Stack class.
 
 A stack is a way of storing data. It is only open at one end and can only have items added or removed, one at a time, from that end. Like stacking bowls on top of each other.
 
-Oh, and no using pop or push! Have fun :)
+Oh, and no using pop or push because the tests are looking for an object! Have fun :)
