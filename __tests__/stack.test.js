@@ -79,4 +79,44 @@ describe("Stack", () => {
         expect(stack.storage).toEqual({});
         expect(stack.quantity).toBe(0);
     })
+
+    test("Stack has an autoFill method that returns a filled up storage object with the single item it was passed in but does not wipe any of the original inputs that still exist within the storage", () => {
+        const stack = new Stack();
+        expect(typeof(stack.autoFill)).toBe("function");
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.autoFill("fillME!");
+        expect(stack.quantity).toBe(10);
+        expect(stack.storage).toEqual({
+            1: 1,
+            2: 2,
+            3: 3,
+            4: "fillME!",
+            5: "fillME!",
+            6: "fillME!",
+            7: "fillME!",
+            8: "fillME!",
+            9: "fillME!",
+            10: "fillME!",
+        })
+
+        const stack2 = new Stack(5);
+        stack2.autoFill(1)
+        expect(stack2.storage).toEqual({
+            1: 1,
+            2: 1,
+            3: 1,
+            4: 1,
+            5: 1
+        })
+        expect(stack2.autoFill(2)).toBe("Stack is full");
+        expect(stack2.storage).toEqual({
+            1: 1,
+            2: 1,
+            3: 1,
+            4: 1,
+            5: 1
+        })
+    })
 });
