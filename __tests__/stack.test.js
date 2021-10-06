@@ -66,4 +66,17 @@ describe("Stack", () => {
         expect(stack.peek()).toBe("dog");
         expect(stack.storage[2]).toBe("dog");
     })
+
+    test("Stack has a clear method that returns an empty storage, with all data removed", () => {
+        const stack = new Stack();
+        expect(typeof(stack.clear)).toBe("function");
+        stack.push(1)
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        expect(stack.quantity).toBe(4);
+        stack.clear();
+        expect(stack.storage).toEqual({});
+        expect(stack.quantity).toBe(0);
+    })
 });
