@@ -38,9 +38,9 @@ Create a function that takes two or more arrays and returns an array of their sy
 ### Task:
 Compare and update the inventory stored in a 2D array against a second 2D array of a fresh delivery. Update the current existing inventory item quantities (in arr1). If an item cannot be found, add the new item and quantity into the inventory array. The returned inventory array should be in alphabetical order by item.
 
-## 3. No Repeats Please
-### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/no-repeats-please">link</a>
+## 3. Create a Stack Class
+I'm sure you remember this one from fundamentals... but if you don't, here's your chance to get to recreate it all from scratch!
 ### Task:
-Return the number of total permutations of the provided string that don't have repeated consecutive letters. Assume that all characters in the provided string are each unique.
+Create a Stack class.
 
-For example, aab should return 2 because it has 6 total permutations (aab, aab, aba, aba, baa, baa), but only 2 of them (aba and aba) don't have the same letter (in this case a) repeating.
+A stack is a way of storing data. It is only open at one end and can only have items added or removed, one at a time, from that end. Like stacking bowls on top of each other.
