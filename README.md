@@ -103,3 +103,18 @@ Our task is to create a function that will determine whether a number is a happy
 Be careful, if you don't hit 1 you might end up in an infinite loop!
 
 Oh, and the last test might take a while, soo.. just let it sit for a minute!
+
+---
+## 6. Are these Numbers Co-Prime?
+In Maths, (Yep, more maths!) a prime number is a number that is only divisible by itself and 1 (e.g. 13 is only divisible by 13 and 1).
+
+Co-Primes are numbers that only common divisor is 1, this means that these numbers we choose don't have to be prime! For example, 13 and 17 are co-prime, neither divisor (1, 13 and 17) goes perfectly into the other except one.
+
+100 and 756 on the other hand aren't co-prime because 2 divides both with no remainder (100/2 = 50, 756/2 = 378)
+
+But, 100 and 111 are co-prime because 100 is divisible only by 1, 2, 4, 5, 25, and 100 whereas 111 is only divisible by 1, 3, 37, and 111. Thus, the only 2 numbers in both lists that are a factor of both 100 and 111 is 1. Hence, co-prime.
+
+## Task:
+We want to find out if any number of numbers are co-prime. Are 100453 and 3417 co-prime? What about these numbers: 79, 11111111? Are co-prime?
+
+Our task is to write a function that will test for this and return true if the numbers are co-prime and false if they aren't.
