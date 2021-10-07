@@ -101,3 +101,5 @@ A happy prime is a prime number that also will hit one when you apply this "happ
 Our task is to create a function that will determine whether a number is a happy prime number or not. The function should return true or false.
 
 Be careful, if you don't hit 1 you might end up in an infinite loop!
+
+Oh, and the last test might take a while, soo.. just let it sit for a minute!
