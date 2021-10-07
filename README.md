@@ -23,6 +23,15 @@ Next up are the functions, these will be where you can create the functions for 
 Lastly, are the solutions. These are my solutions, annotated, so you can understand my thought process for each tech test. Try to tackle the tech tests on your own and only review my answers after you have succeeded in passing the tests, or have attempted multiple times. Trying once for 5 minutes and then looking at the answers isn't going to help you.
 
 ---
+## Using Solutions:
+If you ever find yourself stuck, I have annotated solutions for you to look at.
+
+If you want to test whether they really do work, you can change the requires statements on the relevant to to "../solutions/[FILE_NAME_HERE]". This shall show you the tests working!
+
+I hope having solutions and guiding you through them will help you understand my solution and how to tackle the problem.
+
+Good luck and have fun!
+
 ## 1. Find the Symmetric Difference
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/find-the-symmetric-difference">link</a>
 
