@@ -56,12 +56,12 @@ N.B. When the word abstract is used below, all it means is that the function is 
 
 Our Shapes class is going to need the following:
 - An abstract constructor that takes a single length/radius (m) and a mass (kg),
-- An abstract Surface Area method,
-- An abstract Volume method,
+- An abstract Volume method (getVolume),
+- An abstract Surface Area method (getSurfaceArea),
 - A Density method,
 
 Our Cube and Sphere classes are going to need to define these things further:
 - A Constructor,
-- A Surface Area method,
 - A Volume method,
+- A Surface Area method,
 - A Density method
