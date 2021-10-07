@@ -71,7 +71,7 @@ Our Shapes class is going to need the following:
 - An abstract constructor that takes a single length/radius (m) and a mass (kg),
 - An abstract Volume method (getVolume),
 - An abstract Surface Area method (getSurfaceArea),
-- A Density method,
+- An abstract Density method (getDensity),
 
 Our Cube and Sphere classes are going to need to define these things further:
 - A Constructor,
