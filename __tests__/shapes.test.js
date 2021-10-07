@@ -31,20 +31,20 @@ describe("Shapes and the use of inheritance", () => {
             expect(cube.mass).toBe(100);
         })
 
-        test("Cube class overwrites the getVolume() method and returns the correct volume of the object", () => {
+        test("Cube class overwrites the getVolume() method and returns the correct volume of the object, to 3 decimal places", () => {
             const cube = new Cube(10, 100);
             const cube2 = new Cube(17.2, 50);
             expect(() => cube.getVolume()).not.toThrow();
             expect(cube.getVolume()).toBe(1000);
-            expect(+cube2.getVolume().toFixed(3)).toBe(5088.448);
+            expect(+cube2.getVolume()).toBe(5088.448);
         })
 
-        test("Cube object overwrites the getSurfaceArea() method and returns the correct surface area of the object", () => {
+        test("Cube object overwrites the getSurfaceArea() method and returns the correct surface area of the object, to 3 decimal places", () => {
             const cube = new Cube(10, 100);
-            const cube2 = new Cube(25, 2000);
+            const cube2 = new Cube(25.21, 2000);
             expect(() => cube.getSurfaceArea()).not.toThrow();
             expect(cube.getSurfaceArea()).toBe(600);
-            expect(cube2.getSurfaceArea()).toBe(3750);
+            expect(cube2.getSurfaceArea()).toBe(3813.265);
         })
 
         test("Cube class overwrites the getDensity() method and returns the correct density of the object, to 3 decimal places", () => {
