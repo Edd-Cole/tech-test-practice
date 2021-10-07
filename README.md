@@ -78,3 +78,26 @@ Our Cube and Sphere classes are going to need to define these things further:
 - A Volume method,
 - A Surface Area method,
 - A Density method
+
+---
+## 5. Happy Prime Numbers
+Do you watch Doctor Who? Did you watch the 2007 series with David Tennant and Freema Agyeman? And if so, did you watch the episode 42?
+
+If you didn't don't worry, I'll explain this task here!
+
+In the episode, the Doctor and Martha have to switch on the engines of a space ship because if they don't they'll crash into a sun.
+
+However, there are numerous doors that have been locked and to open them they have to answer a round of multiple questions for each door.
+
+One of the questions is, find the next number in the sequence: 313, 331, 367, ...
+
+The answer is 379. Here's the <a href="https://www.youtube.com/watch?v=ee2If8jSxUo">clip</a> if you want to watch it. With a very quick explanation of a happy prime.
+
+A happy prime number is a number that when you break it down into it's individual digits, square each one and then add them back together will give you a new number. You then repeat the same process with this new number. If you eventually hit 1 after repeating this process as many times as you need, you have a happy number!
+
+A happy prime is a prime number that also will hit one when you apply this "happy" process to it. Here's a <a href="https://en.wikipedia.org/wiki/Happy_number">link</a> for more info.
+
+### Task:
+Our task is to create a function that will determine whether a number is a happy prime number or not. The function should return true or false.
+
+Be careful, if you don't hit 1 you might end up in an infinite loop!
