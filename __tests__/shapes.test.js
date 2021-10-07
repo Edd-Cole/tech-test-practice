@@ -21,4 +21,18 @@ describe("Shapes and the use of inheritance", () => {
             expect(() => shape.getDensity()).toThrow("Abstract method must be overwritten by subclass!");
         })
     })
+
+    describe("Cube Class", () => {
+        test("Cube class overwrites the constructor for shape with it's own constructor and sets the length and mass properties appropriately", () => {
+            expect(() => new Cube(10, 100)).not.toThrow("Cannot instantiate abstract class!");
+            expect(Cube.prototype instanceof Shape).toBe(true);
+            const cube = new Cube(10, 100);
+            expect(cube.length).toBe(10);
+            expect(cube.mass).toBe(100);
+        })
+
+        test("Cube class overwrites the getVolume() method and returns the correct volume of a class", () => {
+
+        })
+    })
 })
