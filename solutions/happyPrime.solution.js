@@ -14,7 +14,7 @@ const isHappyPrime = (num) => {
     //Create a new function to test for happy numbers, we do this so we don't check if each number we create is prime, because this could give us a
     //wrong answer when iterating many times
     function isHappy(number) {
-        //We check if our number is in our repeatedNums array, if it is stop, we will go in an infinite loop!
+        //We check if our number is in our repeatedNums array, if it is stop, otherwise we will go in an infinite loop!
         if (repeatedNums.includes(number)) return false;
 
         //Add this number into our repeats, so we can stop if we hit it in the future
