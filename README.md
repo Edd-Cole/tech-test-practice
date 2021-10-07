@@ -32,6 +32,7 @@ I hope having solutions and guiding you through them will help you understand my
 
 Good luck and have fun!
 
+---
 ## 1. Find the Symmetric Difference
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/find-the-symmetric-difference">link</a>
 
@@ -42,11 +43,13 @@ Symmetric difference is a binary operation, which means it operates on only two 
 ### Task:
 Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
 
+---
 ## 2. Inventory Update
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/inventory-update">link</a>
 ### Task:
 Compare and update the inventory stored in a 2D array against a second 2D array of a fresh delivery. Update the current existing inventory item quantities (in arr1). If an item cannot be found, add the new item and quantity into the inventory array. The returned inventory array should be in alphabetical order by item.
 
+---
 ## 3. Create a Stack Class
 I'm sure you remember this one from fundamentals... but if you don't, here's your chance to get to recreate it all from scratch!
 ### Task:
@@ -56,6 +59,7 @@ A stack is a way of storing data. It is only open at one end and can only have i
 
 Oh, and no using pop or push because the tests are looking for an object! Have fun :)
 
+---
 ## 4. Create some Shapes Classes
 Even more classes, but probably not in the way we're used to. Here we're going to explore some super classes. This will help us get used to inheritance! I hope you enjoy this.
 ### Task:
