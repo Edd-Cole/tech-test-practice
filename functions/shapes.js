@@ -17,7 +17,7 @@ class Sphere extends Shape {
 //Do not change below this line, for testing purposes
 class Dodecahedron extends Shape {
     constructor(length) {
-        this.length = length;
+        super();
     }
 }
 
