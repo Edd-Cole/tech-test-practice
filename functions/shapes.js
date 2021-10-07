@@ -1,23 +1,15 @@
-class Shape {
-    constructor(length, mass) {
-        if (this.constructor === Shape) {
-            throw new Error("Cannot instantiate abstract class!")
-        }
-    }
-}
+class Shape {}
 
-class Cube extends Shape {
+class Cube {}
 
-}
-
-class Sphere extends Shape {
-
-}
+class Sphere {}
 
 //Do not change below this line, for testing purposes
 class Dodecahedron extends Shape {
-    constructor(length) {
+    constructor(length, mass) {
         super();
+        this.length = length;
+        this.mass = mass;
     }
 }
 
