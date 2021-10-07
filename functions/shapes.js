@@ -14,4 +14,9 @@ class Sphere extends Shape {
 
 }
 
-module.exports = { Shape, Cube, Sphere }
+//Do not change below this line, for testing purposes
+class Dodecahedron extends Shape {
+
+}
+
+module.exports = { Shape, Cube, Sphere, Dodecahedron }
