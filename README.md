@@ -122,3 +122,11 @@ Our task is to write a function that will test for this and return true if the n
 ---
 ## 7. Implement Bubble Sort
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-bubble-sort">link</a>
+Bubble sort is one of the original sorting algorithms.
+
+The bubble sort method starts at the beginning of an unsorted array and 'bubbles up' unsorted values towards the end, iterating through the array until it is completely sorted. It does this by comparing adjacent items and swapping them if they are out of order. The method continues looping through the array until no swaps occur at which point the array is sorted.
+
+This method requires multiple iterations through the array and for average and worst cases has quadratic time complexity. While simple, it is usually impractical in most situations.
+
+## Task:
+Our goal here is to re create the bubble sort method on an array of numbers. BUT, we do not want to mutate the original array or them to have the same memory reference!
