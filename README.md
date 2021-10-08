@@ -160,3 +160,17 @@ Our 10,000 number array just got sorted in, at most, 1 and a half days.
 Let's build a Quick Sort algorithm! It is common to make the pivot of the Quick Sort the middle value.
 
 And again, no sort() allowed!
+
+## 9. Special Pythagorean Triplet
+### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-9-special-pythagorean-triplet">link</a>
+A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
+a^2 + b^2 = c^2
+
+For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
+
+Also, there exists exactly one Pythagorean triplet for which a + b + c = 1000.
+
+### Task:
+We want to find a special Pythagorean Triplet which sums to some desired number, n. When we have a + b + c, we want to find the number that is the product of these three, a*b*c.
+
+Write a function that will allow us to find out this product abc.
