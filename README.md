@@ -140,9 +140,9 @@ Consider the following array: [50, 49, 48, ..., 3, 2, 1]. Which is all the numbe
 
 This would take us 2.5 seconds to solve with Bubble Sort. That's an age in computing terms.
 
-And what would happen if our array was 10,000 digits long? 
+And what would happen if our array was 10,000,000 digits long and worked at a rate of 1 loop per ms? 
 
-Worst case, it would take 100,000,000 seconds. Or, a little over 3 years to sort. Still, better than pushing a button for 3 years.
+Worst case, it would take 100,000,000 seconds. Or, a little over 3 years to sort. Still, better than pushing a button for 3 years every 108 minutes.
 <br /><br />
 <img src="https://3.bp.blogspot.com/_r0n-VkU_yEI/TAGSYwk4WrI/AAAAAAAAFGI/AkY_9lWYHwI/s320/Desmond+Doesn't+Push+Button.jpg" />
 <br />
