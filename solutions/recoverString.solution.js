@@ -17,7 +17,7 @@ const recoverString = (triplets) => {
             nextPotentialLetters[notNext] = undefined;
         }
     }
-    //Lastly, remove all undefined's from our contenders array, leaving us with out next letter
+    //Lastly, remove all undefined's from our contenders array, leaving us with our next letter
     nextPotentialLetters = nextPotentialLetters.filter(letter => letter !== undefined);
 
     //Concatenate next letter into our secret string
