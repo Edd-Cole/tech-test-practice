@@ -1,4 +1,4 @@
-const Stack = require("../functions/stack.js");
+const Stack = require("../functions/3. stack.js");
 
 describe("Stack", () => {
     test("Stack has a storage property that is an object itself", () => {

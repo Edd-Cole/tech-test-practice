@@ -1,4 +1,4 @@
-const isHappyPrime = require("../functions/happyPrime.js");
+const isHappyPrime = require("../functions/5. happyPrime.js");
 
 describe("Happy Prime Numbers", () => {
     test("returns false for when the input is 1 (1 is not a prime number!)", () => {

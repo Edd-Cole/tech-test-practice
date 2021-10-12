@@ -1,4 +1,4 @@
-const implementBubbleSort = require("../functions/implementBubbleSort.js");
+const implementBubbleSort = require("../functions/7. implementBubbleSort.js");
 const fs = require("fs/promises");
 
 describe("Creating Bubble Sort", () => {

@@ -1,4 +1,4 @@
-const recoverString = require("../functions/recoverString.js");
+const recoverString = require("../functions/11. recoverString.js");
 
 describe("Recover the Secret String", () => {
     test("returns a word of 3 letters", () => {

@@ -1,4 +1,4 @@
-const { Shape, Cube, Sphere, Dodecahedron } = require("../functions/shapes.js");
+const { Shape, Cube, Sphere, Dodecahedron } = require("../functions/4. shapes.js");
 
 describe("Shapes and the use of inheritance", () => {
     describe("Shape Class", () => {

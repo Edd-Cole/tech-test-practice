@@ -1,4 +1,4 @@
-const updateInventory = require("../functions/inventory-update.js");
+const updateInventory = require("../functions/2. inventory-update.js");
 
 describe("Inventory Update", () => {
     test("When given 2 arrays with identical items, can add and return the item's quantities", () => {
