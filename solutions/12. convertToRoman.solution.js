@@ -1,5 +1,6 @@
 function convertToRomanSol(num) {
     //Create an array of arrays with first position the value of the Roman Numeral, and the second the associated Roman Numeral
+    //An array is used we need to keep the below order for our for loop to work as needed, an object will sort the keys in a wrong order
     const roman = [[1000, "M"], [900, "CM"], [500, "D"], [400, "CD"], [100, "C"], [90, "XC"], [50, "L"], [40, "XL"], [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"]]
     //Define an empty string for our new Roman Number
     let romanString = "";
