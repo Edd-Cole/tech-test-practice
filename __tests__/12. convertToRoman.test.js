@@ -39,10 +39,9 @@ describe("Convert to Roman Numerals", () => {
         expect(convertToRoman(4)).toBe("IV")
         })
 
-    test("Returns Roman numbers when passed random numbers", () => {
-        for(let i = 0; i < 1000; i++) {
-            let num = Math.floor(Math.random() * 4999) + 1
-            expect(convertToRoman(num)).toBe(convertToRomanSol(num));
+    test("Returns all Roman numbers when passed every number between 1 and 4,999", () => {
+        for(let i = 1; i < 5000; i++) {
+            expect(convertToRoman(i)).toBe(convertToRomanSol(i));
         }
     })
 })
