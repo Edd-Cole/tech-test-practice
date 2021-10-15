@@ -221,3 +221,6 @@ We won't be interested in any Roman Numeral over 4,999 as the rules change once 
 Create a function that receives an integer between 1 and 4,999 which will then convert it into it's Roman Numeral counterpart.
 
 Be sure that you look up the rules for numbers like 9, or 400!
+
+<br /><br />
+<sub>Written by <a href="www.github.com/Edd-Cole">Edd Cole</a></sub>
