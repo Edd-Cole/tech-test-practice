@@ -259,5 +259,7 @@ If you hit 2,000,000,000 passings, return -1.
 
 This test is also timed, so make sure your algorithm is <a href="https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation">time efficient</a>.
 
+As an aside, if your solution is not time efficient, you will be waiting for jest for a very long time! My computer runs the 1,000,000 sized array in about 3 minutes. The aim is to get this down to 1 second. The codility link will help!
+
 <br /><br />
 <sub>Written by <a href="www.github.com/Edd-Cole">Edd Cole</a></sub>
