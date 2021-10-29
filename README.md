@@ -255,7 +255,7 @@ Given an Array, A, where 0 determines a car is travelling East, and 1 means a ca
 
 For example: A = [1,0,1,0,1] means there will be 4 passings in total, and A = [0,1,0,1,1] means there will be 5 passings in total.
 
-If you hit 2_000_000_000 passings, return -1.
+If you hit 2,000,000,000 passings, return -1.
 
 This test is also timed, so make sure your algorithm is <a href="https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation">time efficient</a>.
 
