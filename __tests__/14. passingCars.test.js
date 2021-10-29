@@ -23,7 +23,7 @@ describe("Passing Cars", () => {
         expect(passingCars(arr3)).toBe(passingCarsSolution(arr3));
     })
 
-    test("Returns answer for medium sized arrays, <= 10,000", () => {
+    test("Returns answer for medium sized arrays, <= 10,000, time limit = 200ms", () => {
         const arr1 = [];
         const arr2 = [];
         for (let i = 0; i < 10000; i++) {
@@ -40,7 +40,7 @@ describe("Passing Cars", () => {
         expect(new Date() - start).toBeLessThanOrEqual(200);
     })
 
-    test("Returns answer for large arrays of 100,000 in length", async() => {
+    test("Returns answer for large arrays of 100,000 in length, time limit = 800ms", async() => {
         const arr1 = [];
         const arr2 = [];
         for (let i = 0; i < 100000; i++) {
@@ -52,11 +52,11 @@ describe("Passing Cars", () => {
         const start = new Date();
         expect(passingCars(arr1)).toBe(passingCarsSolution(arr1));
         expect(passingCars(arr2)).toBe(passingCarsSolution(arr2));
-        // Code must execute in 500 milliseconds
-        expect(new Date() - start).toBeLessThanOrEqual(500);
+        // Code must execute in 800 milliseconds
+        expect(new Date() - start).toBeLessThanOrEqual(800);
     })
 
-    test.only("Returns answer for large array of 1,000,000", () => {
+    test("Returns answer for large array of 1,000,000, time limit = 5 seconds", () => {
         const arr1 = [];
         const arr2 = [];
         for (let i = 0; i < 1000000; i++) {
@@ -67,9 +67,9 @@ describe("Passing Cars", () => {
         }
         const start = new Date();
         expect(passingCars(arr1)).toBe(passingCarsSolution(arr1));
-        expect(new Date() - start).toBeLessThanOrEqual(1000);
+        expect(new Date() - start).toBeLessThanOrEqual(2500);
         expect(passingCars(arr2)).toBe(passingCarsSolution(arr2));
-        // Code must execute in 2 seconds
-        expect(new Date() - start).toBeLessThanOrEqual(2000);
+        // Code must execute in 5 seconds
+        expect(new Date() - start).toBeLessThanOrEqual(5000);
     })
 })
