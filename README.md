@@ -13,7 +13,7 @@ npm install
 ```
 This should mean you're ready to go!
 ### Structure:
-The repo is set up into 3 main directory structures within the root.
+The repo is set up into 3 main directory structures within the root and then this is divided into 4 main branches where you can practice Intermediate tech tests, Class based tech tests, <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> & <a href="https://codility.com/media/train/1-TimeComplexity.pdf">Time Complexity</a> tech tests, and advanced tech tests.
 The first directory you should see is __tests__. This is where the tests live for the functions you will try to build. Each function has it's own testing file. When running your test, you can append the name of the file you want to test to make sure only that file is run. Use the following command to run your tests.
 ```http
 npm test [ADD_FILE_NAME_HERE]
