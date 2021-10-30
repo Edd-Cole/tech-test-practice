@@ -1,4 +1,4 @@
-const calculateJumps = require("../functions/3. Big O Notation/14. calculateJumps.js");
+const calculateJumps = require("../functions/3. Big O Notation/9. calculateJumps.js");
 
 describe("Frog Jumps", () => {
     test("Returns the correct answer for small values of a, b and d", () => {

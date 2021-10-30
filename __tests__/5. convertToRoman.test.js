@@ -1,5 +1,5 @@
-const convertToRoman = require("../functions/12. convertToRoman.js");
-const convertToRomanSol = require("../solutions/12. convertToRoman.solution.js");
+const convertToRoman = require("../functions/1. Intermediate/5. convertToRoman.js");
+const convertToRomanSol = require("../solutions/1. Intermediate/5. convertToRoman.solution.js");
 
 describe("Convert to Roman Numerals", () => {
     test("Returns 'I' when passed 1", () => {
@@ -30,17 +30,17 @@ describe("Convert to Roman Numerals", () => {
         expect(convertToRoman(1000)).toBe("M");
     })
 
-    test("Returns correct values when passed subtraction values" , () => {
+    test("Returns correct values when passed subtraction values", () => {
         expect(convertToRoman(900)).toBe("CM")
         expect(convertToRoman(400)).toBe("CD")
         expect(convertToRoman(90)).toBe("XC")
         expect(convertToRoman(40)).toBe("XL")
         expect(convertToRoman(9)).toBe("IX")
         expect(convertToRoman(4)).toBe("IV")
-        })
+    })
 
     test("Returns all Roman numbers when passed every number between 1 and 4,999", () => {
-        for(let i = 1; i < 5000; i++) {
+        for (let i = 1; i < 5000; i++) {
             expect(convertToRoman(i)).toBe(convertToRomanSol(i));
         }
     })

@@ -1,4 +1,4 @@
-const toggleDoors = require("../functions/10. toggleDoors.js");
+const toggleDoors = require("../functions/1. Intermediate/1. toggleDoors.js");
 
 describe("Which Doors are Open?", () => {
     test("When given a number of doors, function returns an array", () => {

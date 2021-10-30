@@ -1,4 +1,4 @@
-const pythag = require("../functions/9. specialPythagoreanTriplets.js");
+const pythag = require("../functions/1. Intermediate/4. specialPythagoreanTriplets.js");
 
 describe("Special Pythagorean Triplets", () => {
     test("returns 0 if there are no integers a, b and c that sum to n", () => {
