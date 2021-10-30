@@ -245,11 +245,13 @@ You would need the object path "pricing.price". But, if you want to sort by weig
 Build a nestedObjectPath take an object and a string that will return the key-value pair of a nested object (no arrays will be present). If there are duplicate key-value pairs, we want to find the first one that does not contain an object as the value.
 
 ## 14. Frog Jump
-### Codility <a href="">link</a>
+### Codility <a href="https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/">link</a>
 A small frog wants to get to the other side of the road. The frog is currently located at position a, and wants to get to a position greater than or equal to b. The small frog always jumps a fixed distance, d.
 
 ### Task:
 Create a function that counts the minimal number of jumps that the small frog must perform to reach its target. Your function must be efficient and complete its calculation in the specified time limit.
+
+To learn more about Time Complexity and Big O notation, follow this <a href="https://app.codility.com/programmers/lessons/3-time_complexity/">link</a>
 
 ## 15. Passing Cars...
 ### Codility <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/">link</a>
