@@ -1,5 +1,5 @@
-const passingCars = require("../functions/14. passingCars.js");
-const passingCarsSolution = require("../solutions/14. passingCars.solution.js");
+const passingCars = require("../functions/15. passingCars.js");
+const passingCarsSolution = require("../solutions/15. passingCars.solution.js");
 
 describe("Passing Cars", () => {
     test("Returns 0 when cars are all going in the same direction", () => {
