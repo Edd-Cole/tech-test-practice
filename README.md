@@ -286,7 +286,7 @@ const item = [{
 You would need the object path "pricing.price". But, if you want to sort by weight you would just need "weight". And as we want to sort by any value, we need to build a function that will give us this path.
 
 ### Task:
-Build a nestedObjectPath take an object and a string that will return the key-value pair of a nested object (no arrays will be present). If there are duplicate key-value pairs, we want to find the first one that does not contain an object as the value.
+Build a nestedObjectPath that takes an object and a string that will return the key-value pair of a nested object (no arrays will be present). If there are duplicate key-value pairs, we want to find the first one that does not contain an object as the value.
 
 ---
 <br /><br />
