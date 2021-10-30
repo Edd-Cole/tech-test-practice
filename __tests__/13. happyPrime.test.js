@@ -1,4 +1,5 @@
-const isHappyPrime = require("../functions/4. Advanced/13. happyPrime.js");
+// const isHappyPrime = require("../functions/4. Advanced/13. happyPrime.js");
+const isHappyPrime = require("../solutions/4. Advanced/13. happyPrime.solution.js")
 
 describe("Happy Prime Numbers", () => {
     test("returns false for when the input is 1 (1 is not a prime number!)", () => {
@@ -29,9 +30,9 @@ describe("Happy Prime Numbers", () => {
     })
 
     test("Returns correct deduction for really large numbers!", () => {
-        expect(isHappyPrime(123456789)).toBe(false);
         expect(isHappyPrime(93700121)).toBe(false);
         expect(isHappyPrime(937400153)).toBe(true);
-        expect(isHappyPrime(9374600953)).toBe(false);
+        expect(isHappyPrime(937460149)).toBe(false);
+        expect(isHappyPrime(1037460323)).toBe(true);
     })
 })
