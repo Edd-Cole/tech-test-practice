@@ -152,9 +152,13 @@ We had an idea where we would create a class that would help us calculate number
 ### Task:
 These are the things we need you to help us fix.
 - The constructor,
+    This creates a new array from any collection of numbers entered into the constructor
 - The generate() method,
+    This adds a new number into the object's array by summing all the numbers together, dividing by the last number and then raising it to the nearest integer
 - The getMidpoint() method,
+    This returns the midpoint of the object's array
 - The getUniqueFactors() method,
+    This gives all the unique factors (factors that only appear once for all the numbers) in the object's array
 
 ---
 
