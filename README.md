@@ -155,7 +155,6 @@ These are the things we need you to help us fix.
 - The generate() method,
 - The getMidpoint() method,
 - The getUniqueFactors() method,
-- The createSimilar() method,
 
 ---
 
