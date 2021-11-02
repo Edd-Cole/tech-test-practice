@@ -25,7 +25,7 @@ describe("Creating Bubble Sort", () => {
     })
 
     test("Custom bubble sort function does not implement sort()", () => {
-        return fs.readFile(`${__dirname}/../functions/implementBubbleSort.js`, "utf8")
+        return fs.readFile(`${__dirname}/../functions/1. Intermediate/6. implementBubbleSort.js`, "utf8")
             .then((file) => {
                 let sortString = /\.sort\(/;
                 expect(file.length).toBeGreaterThan(85);
