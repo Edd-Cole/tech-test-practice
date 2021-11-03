@@ -34,6 +34,11 @@ Good luck and have fun!
 
 ---
 ## SECTION 1. INTERMEDIATE:
+
+These tech tests are to help you get used to tougher challenges than you may have dealt with on the course.
+
+If there is something you don't quite understand, I highly recommend you look it up. You would be expected to do so in your tech test!
+
 ---
 ## 1. Which Doors are Open?
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/rosetta-code/100-doors">link</a>
@@ -114,6 +119,10 @@ Our goal here is to re create the bubble sort method on an array of numbers. BUT
 
 ## SECTION 2. CLASSES:
 
+This section is to give you a bit more of an understanding around OOP. You may not have dealt a lot with classes so this is designed to help you improve your skills with it. A lot of critical technologies use OOP principles including, C++, C# and Java.
+
+Getting a bit familiar with it now will save you a lot of hassle if it ever comes up in a tech test.
+
 ---
 ## 7. Create a Stack Class
 I'm sure you remember this one from fundamentals... but if you don't, here's your chance to get to recreate it all from scratch!
@@ -164,6 +173,10 @@ These are the things we need you to help us fix.
 
 ## SECTION 3: BIG O NOTATION & TIME COMPLEXITY:
 
+Creating efficient and scalable algorithms is a very important concept in Computer Science. And being able to solve a problem in a time-efficient manner can be the difference between processing the data in seconds or minutes or hours.
+
+To learn more about Time Complexity and Big O notation, follow this <a href="https://app.codility.com/programmers/lessons/3-time_complexity/">link</a>. It will give you a brief introduction into this key concept.
+
 ---
 ## 10. Frog Jump
 ### Codility <a href="https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/">link</a>
@@ -171,8 +184,6 @@ A small frog wants to get to the other side of the road. The frog is currently l
 
 ### Task:
 Create a function that counts the minimal number of jumps that the small frog must perform to reach its target. Your function must be efficient and complete its calculation in the specified time limit.
-
-To learn more about Time Complexity and Big O notation, follow this <a href="https://app.codility.com/programmers/lessons/3-time_complexity/">link</a>
 
 ---
 
@@ -204,11 +215,11 @@ As an aside, if your solution is not time efficient, you will be waiting for jes
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort">link</a>
 Unfortunately, Bubble Sort is a little slow...
 
-Consider the following array: [50, 49, 48, ..., 3, 2, 1]. Which is all the numbers counting down from 50 to 1.
+Consider the following array: [50, 49, 48, ..., 3, 2, 1]. Which is all the numbers counting down from 50 to 1 and worked at a rate of 1 loop per ms.
 
-This would take us 2.5 seconds to solve with Bubble Sort. That's an age in computing terms.
+The array would need to be looped 50 * 50 = 2,500 times. That's 2.5 seconds to solve with Bubble Sort; an age in computing terms.
 
-And what would happen if our array was 10,000,000 digits long and worked at a rate of 1 loop per ms? 
+And what would happen if our array was 10,000,000 digits long processing it at the same rate?
 
 Worst case, it would take 100,000,000 seconds. Or, a little over 3 years to sort. Still, better than pushing a button for 3 years every 108 minutes.
 <br /><br />
@@ -216,11 +227,13 @@ Worst case, it would take 100,000,000 seconds. Or, a little over 3 years to sort
 <br />
 <sub><a href="https://lostpedia.fandom.com/wiki/Desmond_Hume">Desmond Hume, Lost</a></sub>
 <br /><br />
-So, we're going to try and shorten this time frame down a bit.
+So, we're naturally, we want to try and shorten this time frame down a bit.
 
 Quick sort is an efficient, recursive divide-and-conquer approach to sorting an array. In this method, a pivot value is chosen in the original array. The array is then partitioned into two subarrays of values less than and greater than the pivot value. We then combine the result of recursively calling the quick sort algorithm on both sub-arrays. This continues until the base case of an empty or single-item array is reached, which we return. The unwinding of the recursive calls return us the sorted array.
 
 Quick sort is a very efficient sorting method, providing O(nlog(n)) performance on average. It is also relatively easy to implement. These attributes make it a popular and useful sorting method.
+
+Our 50 number array just got sorted in half a second, max.
 
 Our 10,000 number array just got sorted in, at most, 1 and a half days.
 
@@ -232,6 +245,12 @@ And again, no sort() allowed!
 ---
 
 ## SECTION 4. ADVANCED:
+
+These are trickier challenges that I've come across whilst building this repo, and I think these will be a higher level than you should meet in any tech test you do straight out of the bootcamp.
+
+But, if you're a level above, any tech test you do will demonstrate your skills and make you the top, if not, one of the top contenders for your desired role, technically.
+
+Give these a shot if you are aiming for BJSS, Infinity Works or any other Academy programme. This section will hold you in good stead.
 
 ---
 ## 14. Find the Symmetric Difference
