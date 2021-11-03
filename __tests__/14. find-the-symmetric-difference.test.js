@@ -1,4 +1,4 @@
-const sym = require("../functions/4. Advanced/13. find-the-symmetric-difference.js");
+const sym = require("../functions/4. Advanced/14. find-the-symmetric-difference.js");
 
 describe("Find the Symmetric Difference", () => {
     test("When passed 2 arrays with no intersecting value, will return an array containing all the values from both arrays", () => {

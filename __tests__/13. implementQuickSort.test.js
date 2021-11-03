@@ -1,4 +1,4 @@
-const implementQuickSort = require("../functions/3. Big O Notation/12. implementQuickSort.js");
+const implementQuickSort = require("../functions/3. Big O Notation/13. implementQuickSort.js");
 const fs = require("fs/promises");
 
 describe("Quick Sort Algorithm", () => {
@@ -39,7 +39,7 @@ describe("Quick Sort Algorithm", () => {
     })
 
     test("Does not use sort()", () => {
-        return fs.readFile(`${__dirname}/../functions/3. Big O Notation/12. implementQuickSort.js`, "utf8")
+        return fs.readFile(`${__dirname}/../functions/3. Big O Notation/13. implementQuickSort.js`, "utf8")
             .then((file) => {
                 let sortString = /\.sort\(/;
                 expect(file.length).toBeGreaterThan(85);

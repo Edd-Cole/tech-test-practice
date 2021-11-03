@@ -1,5 +1,5 @@
-const passingCars = require("../functions/3. Big O Notation/11. passingCars.js");
-const passingCarsSolution = require("../solutions/3. Big O Notation/11. passingCars.solution.js");
+const passingCars = require("../functions/3. Big O Notation/12. passingCars.js");
+const passingCarsSolution = require("../solutions/3. Big O Notation/12. passingCars.solution.js");
 
 describe("Passing Cars", () => {
     test("Returns 0 when cars are all going in the same direction", () => {
