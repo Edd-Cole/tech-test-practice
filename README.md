@@ -175,7 +175,14 @@ Create a function that counts the minimal number of jumps that the small frog mu
 To learn more about Time Complexity and Big O notation, follow this <a href="https://app.codility.com/programmers/lessons/3-time_complexity/">link</a>
 
 ---
-## 11. Passing Cars...
+
+## 11. Add the Numbers
+I'm sure you've come across this one before. And it's a great intro into Time Complexity along with Frog Jump.
+
+### Task:
+Add all the numbers from 0 to sum number n... But this time, you have to complete it in the time limit!
+---
+## 12. Passing Cars...
 ### Codility <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/">link</a>
 Imagine, you're on a road travelling west to east, and you pass 5 cars. You know you have made 5 passings. But, what if you have a car in front of you? In total, there have been 10 passings. And a car behind you? There are now 15 passes. Quite simple.
 
@@ -193,7 +200,7 @@ This test is also timed, so make sure your algorithm is <a href="https://rob-bel
 As an aside, if your solution is not time efficient, you will be waiting for jest for a very long time! My computer runs the 1,000,000 sized array in about 3 minutes. The aim is to get this down to 1 second. The codility link will help!
 
 ---
-## 12. Implement Quick Sort
+## 13. Implement Quick Sort
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort">link</a>
 Unfortunately, Bubble Sort is a little slow...
 
@@ -227,7 +234,7 @@ And again, no sort() allowed!
 ## SECTION 4. ADVANCED:
 
 ---
-## 13. Find the Symmetric Difference
+## 14. Find the Symmetric Difference
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/find-the-symmetric-difference">link</a>
 
 The mathematical term symmetric difference (△ or ⊕) of two sets is the set of elements which are in either of the two sets but not in both. For example, for sets A = {1, 2, 3} and B = {2, 3, 4}, A △ B = {1, 4}.
@@ -238,7 +245,7 @@ Symmetric difference is a binary operation, which means it operates on only two 
 Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
 
 ---
-## 14. Happy Prime Numbers
+## 15. Happy Prime Numbers
 Do you watch Doctor Who? Did you watch the 2007 series with David Tennant and Freema Agyeman? And if so, did you watch the episode 42?
 
 If you didn't don't worry, I'll explain this task here!
@@ -259,7 +266,7 @@ A happy prime is a prime number that also will hit one when you apply this "happ
 Our task is to create a function that will determine whether a number is a happy prime number or not. The function should return true or false.
 
 ---
-## 15. Recover the Secret String
+## 16. Recover the Secret String
 ### Code Wars <a href="https://www.codewars.com/kata/53f40dff5f9d31b813000774/train/javascript">link</a>
 In this challenge, we are given an array of arrays. The sub-array are of length 3 and are triples of letters that, when all combined, can be used to discover a secret message.
 
@@ -278,7 +285,7 @@ A note to add, that the secret message will only ever use each letter once, and 
 Our challenge is to write an algorithm that can reveal the secret string.
 
 ---
-## 16. What is the Nested Object Pathway?
+## 17. What is the Nested Object Pathway?
 Consider this, you're working in MongoDB and want to sort your documents by any key. The problem though is that you have nested objects within nested objects. Now, you could hard code this, but... the conditional logic will get very big very quickly. So, instead you decide to build a function that will give you the object key path that you need. For example let's say you want to sort this array of "objects" by price:
 
 const item = [{
