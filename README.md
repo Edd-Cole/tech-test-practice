@@ -171,6 +171,52 @@ These are the things we need you to help us fix.
 
 ---
 
+## 10. Binary Search Tree
+In Computer Science, a tree is a data structure wherein the data is organised down branches relative to it's "size" against a value. A Binary Tree is a tree that for each value in the tree offers 2 branches. Here's a diagram for reference...
+<br /><br />
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Yz2ZINJDIFiLFfGonPKMvQHaG8%26pid%3DApi&f=1" width="20%"/>
+<br /><br />
+Why would we want to use a tree? Surely, it would get too difficult too look at if we have millions of items.
+
+But that's the advantage. As you learn in the next section, time efficiency of an algorithm is an important factor for large data sizes, and even though a tree will look terrible to look at, it's much more efficient for traversing than a standard array.
+
+Let's say we have a tree as such:
+
+                            100
+                    50              150
+                25      75      125     175
+
+If we wanted to find the number 75, we would only need to go down 2 branches, the smaller one and then the larger one, comparing the number we want to find with the current value.
+
+In a sorted array, it would be 3 steps from the start, and in an unsorted array it could take up to 7 steps.
+
+A well ordered tree, offers a more efficient way to store values and to find them for large data sets.
+
+For the mathsy people reading this. The longest it would take to traverse a well-ordered tree is log(n) where n is the number of nodes. And for an unordered array, the longest it would take is n, the number of values in the array.
+
+For those that aren't so mathsy, if we moved at 1 value per second in both an unordered array and our well-ordered tree. If both our array and tree had 1024 values in them, it would take, maximally, 1024 seconds to completely search the array for our value. Our tree, on the other hand, would take 10 seconds, at most.
+
+This is called the algorithms complexity, which is given in Big O notation, but that's for the next section.
+
+Even if the value wasn't at the end of the array, searching the array will never be faster than searching the tree. It can only ever match the tree up to a certain point.
+
+### Task:
+We are going to build a binary search tree. Two classes have already been set up for you, BST and Node, your job is to give it the following functionality.
+
+Node Class:
+- Creates an object with a value, larger and smaller references,
+- Has a getNode() method that returns the current node,
+- Has an insertNode() method that will add a value into the Node,
+- insertNode() can place a Node deep into the structure of the Node,
+- Has a contains() method that searches the tree for the desired value
+
+BST Class:
+- Is a subclass of Node,
+- insertNode() and contains() should still work for BST,
+- Has a replace() method, replacing the current tree with a new tree,
+- Has a locate() method that gives the path to the desired value in the tree
+
+---
 ## SECTION 3: BIG O NOTATION & TIME COMPLEXITY:
 
 Creating efficient and scalable algorithms is a very important concept in Computer Science. And being able to solve a problem in a time-efficient manner can be the difference between processing the data in seconds or minutes or hours.
@@ -178,7 +224,7 @@ Creating efficient and scalable algorithms is a very important concept in Comput
 To learn more about Time Complexity and Big O notation, follow this <a href="https://app.codility.com/programmers/lessons/3-time_complexity/">link</a>. It will give you a brief introduction into this key concept.
 
 ---
-## 10. Frog Jump
+## 11. Frog Jump
 ### Codility <a href="https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/">link</a>
 A small frog wants to get to the other side of the road. The frog is currently located at position a, and wants to get to a position greater than or equal to b. The small frog always jumps a fixed distance, d.
 
@@ -187,13 +233,13 @@ Create a function that counts the minimal number of jumps that the small frog mu
 
 ---
 
-## 11. Add the Numbers
+## 12. Add the Numbers
 I'm sure you've come across this one before. And it's a great intro into Time Complexity along with Frog Jump.
 
 ### Task:
 Add all the numbers from 0 to sum number n... But this time, you have to complete it in the time limit!
 ---
-## 12. Passing Cars...
+## 13. Passing Cars...
 ### Codility <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/">link</a>
 Imagine, you're on a road travelling west to east, and you pass 5 cars. You know you have made 5 passings. But, what if you have a car in front of you? In total, there have been 10 passings. And a car behind you? There are now 15 passes. Quite simple.
 
@@ -211,7 +257,7 @@ This test is also timed, so make sure your algorithm is <a href="https://rob-bel
 As an aside, if your solution is not time efficient, you will be waiting for jest for a very long time! My computer runs the 1,000,000 sized array in about 3 minutes. The aim is to get this down to 1 second. The codility link will help!
 
 ---
-## 13. Implement Quick Sort
+## 14. Implement Quick Sort
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort">link</a>
 Unfortunately, Bubble Sort is a little slow...
 
@@ -253,7 +299,7 @@ But, if you're a level above, any tech test you do will demonstrate your skills 
 Give these a shot if you are aiming for BJSS, Infinity Works or any other Academy programme. This section will hold you in good stead.
 
 ---
-## 14. Find the Symmetric Difference
+## 15. Find the Symmetric Difference
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/find-the-symmetric-difference">link</a>
 
 The mathematical term symmetric difference (△ or ⊕) of two sets is the set of elements which are in either of the two sets but not in both. For example, for sets A = {1, 2, 3} and B = {2, 3, 4}, A △ B = {1, 4}.
@@ -264,7 +310,7 @@ Symmetric difference is a binary operation, which means it operates on only two 
 Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
 
 ---
-## 15. Happy Prime Numbers
+## 16. Happy Prime Numbers
 Do you watch Doctor Who? Did you watch the 2007 series with David Tennant and Freema Agyeman? And if so, did you watch the episode 42?
 
 If you didn't don't worry, I'll explain this task here!
@@ -285,7 +331,7 @@ A happy prime is a prime number that also will hit one when you apply this "happ
 Our task is to create a function that will determine whether a number is a happy prime number or not. The function should return true or false.
 
 ---
-## 16. Recover the Secret String
+## 17. Recover the Secret String
 ### Code Wars <a href="https://www.codewars.com/kata/53f40dff5f9d31b813000774/train/javascript">link</a>
 In this challenge, we are given an array of arrays. The sub-array are of length 3 and are triples of letters that, when all combined, can be used to discover a secret message.
 
@@ -304,7 +350,7 @@ A note to add, that the secret message will only ever use each letter once, and 
 Our challenge is to write an algorithm that can reveal the secret string.
 
 ---
-## 17. What is the Nested Object Pathway?
+## 18. What is the Nested Object Pathway?
 Consider this, you're working in MongoDB and want to sort your documents by any key. The problem though is that you have nested objects within nested objects. Now, you could hard code this, but... the conditional logic will get very big very quickly. So, instead you decide to build a function that will give you the object key path that you need. For example let's say you want to sort this array of "objects" by price:
 
 const item = [{
