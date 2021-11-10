@@ -285,6 +285,7 @@ I'm sure you've come across this one before. And it's a great intro into Time Co
 
 ### Task:
 Add all the numbers from 0 to sum number n (n > 0)... But this time, you have to complete it in the time limit!
+
 ---
 ## 13. Passing Cars...
 ### Codility <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/">link</a>
