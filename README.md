@@ -37,30 +37,51 @@ Good luck and have fun!
 
 These tech tests are to help you get used to tougher challenges than you may have dealt with on the course.
 
-If there is something you don't quite understand, I highly recommend you look it up. You would be expected to do so in your tech test!
+If there is something you don't quite understand, I highly recommend you look it up. You would be expected to do so in <em>your</em> tech test!
 
 ---
 ## 1. Which Doors are Open?
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/rosetta-code/100-doors">link</a>
-In this challenge, we have some number of doors that we will pass by, all of which are initially closed. We walk past each door and when we walk past them the first time we toggle all the doors. On our next iteration, we only toggle every 2nd door. On our next iteration, we toggle every 3rd door. Where each iteration we increase the value of the door we toggle. Until we toggle only the final door.
+In this challenge, we have some number, n, of doors that we will pass by, all of which are initially closed. We walk past each door and when we walk past them the first time we toggle all the doors. On our next iteration, we only toggle every 2nd door. On our next iteration, we toggle every 3rd door. Where each iteration we increase the value of the door we toggle. Until we toggle only the final door.
+
+For the visually oriented. Assume this collection of 0's and 1's represent if a door is closed or open, respectively.
+
+0 0 0 0 0 ...;
+
+After our first loop we change all the doors states,
+
+1 1 1 1 1 ...;
+
+After our second loop, we change every second door's states,
+
+1 0 1 0 1 ...;
+
+After our third loop we change every 3rd door's states,
+
+1 0 0 0 1 ...;
+
+And so on...  
+
 ### Task:
 We want to find out the index of the doors that are open after our final pass.
 For example, given 5 doors, our function doorsOpened(5) should return an array of [1, 4] because 1 and 4 are the only opened doors.
 
 ---
 ## 2. Are these Numbers Co-Prime?
-In Maths, (Yep, more maths!) a prime number is a number that is only divisible by itself and 1 (e.g. 13 is only divisible by 13 and 1).
+In maths, a prime number is a number that is only divisible by itself and 1 (e.g. 13 is only divisible by 13 and 1).
 
-Co-Primes are numbers that only common divisor is 1, this means that these numbers we choose don't have to be prime! For example, 13 and 17 are co-prime, neither divisor (1, 13 and 17) goes perfectly into the other except one.
+Co-Primes are 2 numbers such that their only common divisor is 1. For example, 9 and 20 are co-prime, no divisors (1, 2, 3, 4, 5, 9, 10 and 20) go perfectly into the other except 1.
 
-100 and 756 on the other hand aren't co-prime because 2 divides both with no remainder (100/2 = 50, 756/2 = 378)
+Notice that neither 9 or 20 are prime themselves. This means that the numbers we choose don't have to be prime for them to be co-prime. But it does help if one number is prime.
 
-But, 100 and 111 are co-prime because 100 is divisible only by 1, 2, 4, 5, 25, and 100 whereas 111 is only divisible by 1, 3, 37, and 111. Thus, the only 2 numbers in both lists that are a factor of both 100 and 111 is 1. Hence, co-prime.
+100 and 756 on the other hand aren't co-prime because 2 divides both with no remainder (100/2 = 50, 756/2 = 378).
+
+But, 100 and 111 are co-prime because 100 is divisible only by 1, 2, 4, 5, 10, 20, 25, 50 and 100 whereas 111 is only divisible by 1, 3, 37, and 111. Thus, the only 2 numbers in both lists that are a factor of both 100 and 111 is 1. Hence, 100 and 111 are co-prime.
 
 ## Task:
-We want to find out if any number of numbers are co-prime. Are 100453 and 3417 co-prime? What about these numbers: 79, 11111111? Are co-prime?
+We want to find out if any 2 numbers are co-prime. Are 100453 and 3417 co-prime? What about these numbers: 79, 11111111? Are they co-prime?
 
-Our task is to write a function that will test for this and return true if the numbers are co-prime and false if they aren't.
+Write a function that will test for this and return true if the numbers are co-prime and false if they aren't.
 
 ---
 ## 3. Inventory Update
@@ -71,10 +92,10 @@ Compare and update the inventory stored in a 2D array against a second 2D array 
 ---
 ## 4. Special Pythagorean Triplet
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-9-special-pythagorean-triplet">link</a>
-A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
-a^2 + b^2 = c^2
+A Pythagorean triplet is a set of three natural numbers (a posh maths term for any whole number greater than or equal to 0), a < b < c, for which,
+a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.
 
-For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
+For example, 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 = 5<sup>2</sup>.
 
 Also, there exists exactly one Pythagorean triplet for which a + b + c = 1000.
 
@@ -85,9 +106,10 @@ Write a function that will allow us to find out this product abc.
 
 ---
 ## 5. Convert To Roman Numerals
-This is one that I used to hear about from candidates when I used to be a Recruiter! I thought we should tackle this so we're better prepared for it if we ever face it in a real life tech test!
+This is one that I used to hear about from candidates when I used to be a Tech Recruiter! I thought we should tackle this so we're better prepared for it if we ever face it in a real life tech test!
 
 If you need a reminder the Roman Numerals we'll be using are as follows:
+
 1: I,
 5: V,
 10: X,
@@ -101,8 +123,6 @@ We won't be interested in any Roman Numeral over 4,999 as the rules change once 
 ### Task:
 Create a function that receives an integer between 1 and 4,999 which will then convert it into it's Roman Numeral counterpart.
 
-Be sure that you look up the rules for numbers like 9, or 400!
-
 ---
 ## 6. Implement Bubble Sort
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-bubble-sort">link</a>
@@ -110,16 +130,26 @@ Bubble sort is one of the original sorting algorithms.
 
 The bubble sort method starts at the beginning of an unsorted array and 'bubbles up' unsorted values towards the end, iterating through the array until it is completely sorted. It does this by comparing adjacent items and swapping them if they are out of order. The method continues looping through the array until no swaps occur at which point the array is sorted.
 
-This method requires multiple iterations through the array and for average and worst cases has quadratic time complexity. While simple, it is usually impractical in most situations.
+For example, let's say we have this array to start with:
+
+[0, 2, 1, 4, 3]
+
+After one loop it should look like this:
+
+[0, 1, 2, 3, 4]
+
+We get here by first comparing 0 with 2, is 0 greater than 2? No, so we do nothing and move on. Next, is 2 greater than 1? Yes, swap 2 and 1's positions in the array. Next, is 2 greater than 4 (remember we're on index 3 but still on number 2 because we swapped 2 and 1)? No, so keep them the same. Last in this loop, is 4 greater than 3? Yes, so swap.
+
+As we have made changes, we would need to loop again to make sure that the array is sorted, or if changes still need to be made.
 
 ## Task:
-Our goal here is to re create the bubble sort method on an array of numbers. BUT, we do not want to mutate the original array or them to have the same memory reference!
+Our goal here is to recreate the bubble sort method on an array of numbers. BUT, we do not want to mutate the original array or them to have the same memory reference!
 
 ---
 
 ## SECTION 2. CLASSES:
 
-This section is to give you a bit more of an understanding around OOP. You may not have dealt a lot with classes so this is designed to help you improve your skills with it. A lot of critical technologies use OOP principles including, C++, C# and Java.
+This section is to give you a better understanding of OOP. You may not have dealt a lot with classes in the course so this is designed to help you improve your OOP skills. A lot of critical technologies use OOP principles including, C++, C# and Java.
 
 Getting a bit familiar with it now will save you a lot of hassle if it ever comes up in a tech test.
 
@@ -131,18 +161,35 @@ Create a Stack class.
 
 A stack is a way of storing data. It is only open at one end and can only have items added or removed, one at a time, from that end. Like stacking bowls on top of each other.
 
-Oh, and no using pop or push because the tests are looking for an object! Have fun :)
+Your stack will need:
+- A push() method,
+- A pop() method,
+- An isEmpty() method,
+- An isFull() method,
+- A peek() method,
+- A clear() method,
+- An autoFill() method
 
 ---
 ## 8. Create some Shapes Classes
-Even more classes, but probably not in the way we're used to. Here we're going to explore some super classes. This will help us get used to inheritance! I hope you enjoy this.
+Even more classes, but probably not in the way we're used to, yet. Here we're going to explore some super classes. This will help us get used to inheritance and abstraction! I hope you enjoy this.
+
+Inheritance is a way of "passing down" information from one class to another. All the information contained by the parent class can be accessed by the child class; the properties it uses and the methods that can be invoked.
+
+However, we can also overwrite methods if we decide a general rule doesn't help a specific child class case. For example, if we have a Triangle super class that calculates the longest side of any triangle given 2 sides, it could be a complicated expression involving trigonometry. But, in the case of right angled triangles, we would want to invoke a simpler method using the Pythagorean Theorem; longestSide = Math.sqrt(a<sup>2</sup> + b<sup>2</sup>). Much nicer!
+
+Abstraction is when we would overwrite the method each and every time for each sub class. It would still make sense to have it in the parent class, because it is still a method/behaviour of said class, but we don't complete the logic because it's too general to give any good information back.
+
+For exampe, this Shapes super class, it would make sense for it to have a getArea() method as every shape <strong>must</strong> have an area. But, how we calculate that area is going to be different for Triangles, Squares, Trapezoids, Pentagons, and any other regular/irregular shape. So, we say, "This shape class has an area, but there isn't enough information right now to use this method, but it makes sense for it to exist here". We can then overwrite this abstract method in any sub class.
+
+An abstract class is any class that has at least 1 abstract method.
 ### Task:
-Create a Shapes super class that will be the super class to a Cube and Sphere class.
+Create a Shapes super class that will be the parent class to a Cube and Sphere class.
 
 N.B. When the word abstract is used below, all it means is that the function is defined but does not contain a body. It is completely empty. Here is a <a href="https://stackoverflow.com/questions/597769/how-do-i-create-an-abstract-base-class-in-javascript">Stack Overflow</a> page that will help you for this!
 
 Our Shapes class is going to need the following:
-- An abstract constructor that takes a single length/radius (m) and a mass (kg),
+- An abstract Constructor that takes a single length/radius (m) and a mass (kg),
 - An abstract Volume method (getVolume),
 - An abstract Surface Area method (getSurfaceArea),
 - An abstract Density method (getDensity),
@@ -160,19 +207,19 @@ We had an idea where we would create a class that would help us calculate number
 
 ### Task:
 These are the things we need you to help us fix.
-- The constructor,
-    This creates a new array from any collection of numbers entered into the constructor
-- The generate() method,
-    This adds a new number into the object's array by summing all the numbers together, dividing by the last number and then raising it to the nearest integer
-- The getMidpoint() method,
-    This returns the midpoint of the object's array
-- The getUniqueFactors() method,
-    This gives all the unique factors (factors that only appear once for all the numbers) in the object's array
+- The constructor;
+    this creates a new array from any collection of numbers entered into the constructor
+- The generate() method;
+    this adds a new number into the object's array by summing all the numbers together, dividing by the last number and then raising it to the nearest integer
+- The getMidpoint() method;
+    this returns the midpoint of the object's array
+- The getUniqueFactors() method;
+    this gives all the unique factors (factors that only appear once for all the numbers) in the object's array
 
 ---
 
 ## 10. Binary Search Tree
-In Computer Science, a tree is a data structure wherein the data is organised down branches relative to it's "size" against a value. A Binary Tree is a tree that for each value in the tree offers 2 branches. Here's a diagram for reference...
+In Computer Science, a tree is a data structure wherein the data is organised down branches relative to it's "size" against a value. A Binary Tree is a tree that for each value in the tree, the tree offers 2 branches to follow depending on if the value we are comparing is greater or smaller than the value in the tree. Here's a diagram for reference...
 <br /><br />
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Yz2ZINJDIFiLFfGonPKMvQHaG8%26pid%3DApi&f=1" width="20%"/>
 <br /><br />
@@ -183,8 +230,8 @@ But that's the advantage. As you learn in the next section, time efficiency of a
 Let's say we have a tree as such:
 
                             100
-                    50              150
-                25      75      125     175
+                    50               150
+                25      75      125       175
 
 If we wanted to find the number 75, we would only need to go down 2 branches, the smaller one and then the larger one, comparing the number we want to find with the current value.
 
@@ -219,7 +266,7 @@ BST Class:
 ---
 ## SECTION 3: BIG O NOTATION & TIME COMPLEXITY:
 
-Creating efficient and scalable algorithms is a very important concept in Computer Science. And being able to solve a problem in a time-efficient manner can be the difference between processing the data in seconds or minutes or hours.
+Creating efficient and scalable algorithms is a very important concept in Computer Science. Being able to solve a problem in a time-efficient manner can be the difference between processing the data in seconds or minutes or hours.
 
 To learn more about Time Complexity and Big O notation, follow this <a href="https://app.codility.com/programmers/lessons/3-time_complexity/">link</a>. It will give you a brief introduction into this key concept.
 
@@ -237,7 +284,7 @@ Create a function that counts the minimal number of jumps that the small frog mu
 I'm sure you've come across this one before. And it's a great intro into Time Complexity along with Frog Jump.
 
 ### Task:
-Add all the numbers from 0 to sum number n... But this time, you have to complete it in the time limit!
+Add all the numbers from 0 to sum number n (n > 0)... But this time, you have to complete it in the time limit!
 ---
 ## 13. Passing Cars...
 ### Codility <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/">link</a>
@@ -250,22 +297,24 @@ Given an Array, A, where 0 determines a car is travelling East, and 1 means a ca
 
 For example: A = [1,0,1,0,1] means there will be 4 passings in total, and A = [0,1,0,1,1] means there will be 5 passings in total.
 
-If you hit 2,000,000,000 passings, return -1.
+If you get >= 2,000,000,000 passings, return -1.
 
 This test is also timed, so make sure your algorithm is <a href="https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation">time efficient</a>.
 
-As an aside, if your solution is not time efficient, you will be waiting for jest for a very long time! My computer runs the 1,000,000 sized array in about 3 minutes. The aim is to get this down to 1 second. The codility link will help!
+As an aside, if your solution is not time efficient, you will be waiting for jest for a very long time! My computer runs the 1,000,000 sized array in about 3 minutes. The aim is to get this down to 5 seconds. The links will help!
 
 ---
 ## 14. Implement Quick Sort
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort">link</a>
+Earlier, I asked you to sort an array of values using Bubble Sort.
+
 Unfortunately, Bubble Sort is a little slow...
 
-Consider the following array: [50, 49, 48, ..., 3, 2, 1]. Which is all the numbers counting down from 50 to 1 and worked at a rate of 1 loop per ms.
+Consider the following array: [50, 49, 48, ..., 3, 2, 1], all the numbers counting down from 50 to 1 and our computer working at a rate of 1 loop per ms.
 
 The array would need to be looped 50 * 50 = 2,500 times. That's 2.5 seconds to solve with Bubble Sort; an age in computing terms.
 
-And what would happen if our array was 10,000,000 digits long processing it at the same rate?
+And what would happen if our array was 10,000,000 digits long, processing it at the same rate as above?
 
 Worst case, it would take 100,000,000 seconds. Or, a little over 3 years to sort. Still, better than pushing a button for 3 years every 108 minutes.
 <br /><br />
@@ -273,20 +322,20 @@ Worst case, it would take 100,000,000 seconds. Or, a little over 3 years to sort
 <br />
 <sub><a href="https://lostpedia.fandom.com/wiki/Desmond_Hume">Desmond Hume, Lost</a></sub>
 <br /><br />
-So, we're naturally, we want to try and shorten this time frame down a bit.
+So, naturally, we want to try and shorten this time frame down a bit.
 
 Quick sort is an efficient, recursive divide-and-conquer approach to sorting an array. In this method, a pivot value is chosen in the original array. The array is then partitioned into two subarrays of values less than and greater than the pivot value. We then combine the result of recursively calling the quick sort algorithm on both sub-arrays. This continues until the base case of an empty or single-item array is reached, which we return. The unwinding of the recursive calls return us the sorted array.
 
 Quick sort is a very efficient sorting method, providing O(nlog(n)) performance on average. It is also relatively easy to implement. These attributes make it a popular and useful sorting method.
 
+Bubble sort takes O(n<sup>2</sup>) time to compute, for those interested.
+
 Our 50 number array just got sorted in half a second, max.
 
-Our 10,000 number array just got sorted in, at most, 1 and a half days.
+Our 10,000 number array just got sorted in, at most, 1 and a half days, assuming the same rate of computing.
 
 ### Task:
 Let's build a Quick Sort algorithm! It is common to make the pivot of the Quick Sort the middle value.
-
-And again, no sort() allowed!
 
 ---
 
@@ -294,7 +343,7 @@ And again, no sort() allowed!
 
 These are trickier challenges that I've come across whilst building this repo, and I think these will be a higher level than you should meet in any tech test you do straight out of the bootcamp.
 
-But, if you're a level above, any tech test you do will demonstrate your skills and make you the top, if not, one of the top contenders for your desired role, technically.
+But, if you're a level above, any tech test you do will demonstrate your skills and make you the top, if not, one of the top contenders for your desired role, in technical ability.
 
 Give these a shot if you are aiming for BJSS, Infinity Works or any other Academy programme. This section will hold you in good stead.
 
@@ -323,9 +372,11 @@ One of the questions is, find the next number in the sequence: 313, 331, 367, ..
 
 The answer is 379. Here's the <a href="https://www.youtube.com/watch?v=ee2If8jSxUo">clip</a> if you want to watch it. With a very quick explanation of a happy prime.
 
-A happy prime number is a number that when you break it down into it's individual digits, square each one and then add them back together will give you a new number. You then repeat the same process with this new number. If you eventually hit 1 after repeating this process as many times as you need, you have a happy number!
+A happy number is a number that when you break it down into it's individual digits, square each one and then add them back together will give you a new number. You then repeat the same process with this new number. If you eventually hit 1 after repeating this process as many times as you need, you have a happy number!
 
-A happy prime is a prime number that also will hit one when you apply this "happy" process to it. Here's a <a href="https://en.wikipedia.org/wiki/Happy_number">link</a> for more info.
+For example: 68 --> 6<sup>2</sup> + 8<sup>2</sup> --> 36 + 64 --> 100 --> 1<sup>2</sup> + 0<sup>2</sup> + 0<sup>2</sup> --> 1 + 0 + 0 --> 1; 68 is a happy number.
+
+A happy prime is a prime number that will also hit one when you apply this "happy" process to it. Here's a <a href="https://en.wikipedia.org/wiki/Happy_number">link</a> for more info.
 
 ### Task:
 Our task is to create a function that will determine whether a number is a happy prime number or not. The function should return true or false.
@@ -346,6 +397,7 @@ For example, our array could look like:
 which, our algorithm, should deduce as the string "help".
 
 A note to add, that the secret message will only ever use each letter once, and the letters in the sub arrays will always be in the same order that they appear in the secret string.
+
 ### Task:
 Our challenge is to write an algorithm that can reveal the secret string.
 
