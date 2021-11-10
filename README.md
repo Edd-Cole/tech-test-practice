@@ -142,7 +142,7 @@ We get here by first comparing 0 with 2, is 0 greater than 2? No, so we do nothi
 
 As we have made changes, we would need to loop again to make sure that the array is sorted, or if changes still need to be made.
 
-## Task:
+### Task:
 Our goal here is to recreate the bubble sort method on an array of numbers. BUT, we do not want to mutate the original array or them to have the same memory reference!
 
 ---
