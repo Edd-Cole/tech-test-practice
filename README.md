@@ -406,7 +406,7 @@ Our challenge is to write an algorithm that can reveal the secret string.
 ## 18. What is the Nested Object Pathway?
 Consider this, you're working in MongoDB and want to sort your documents by any key. The problem though is that you have nested objects within nested objects. Now, you could hard code this, but... the conditional logic will get very big very quickly. So, instead you decide to build a function that will give you the object key path that you need. For example let's say you want to sort this array of "objects" by price:
 
-const item = [{
+const item = {
     name: "Ball",
     pricing: {
         price: 599,
@@ -418,7 +418,7 @@ const item = [{
         height: 10,
         width: 10
     }
-}],
+},
 
 You would need the object path "pricing.price". But, if you want to sort by weight you would just need "weight". And as we want to sort by any value, we need to build a function that will give us this path.
 
