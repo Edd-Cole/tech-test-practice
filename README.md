@@ -441,5 +441,24 @@ You would need the object path "pricing.price". But, if you want to sort by weig
 Build a nestedObjectPath that takes an object and a string that will return the pathway through the object that get's us to our desired key-value pair of a nested object (no arrays will be present). If there are duplicate key-value pairs, we want to find the first one that does not contain an object as the value.
 
 ---
+
+## Difference to the Next Fibonacci Number:
+
+I'm sure you've heard of the Fibonacci Sequence. It's the set of numbers that you get a new number when you add the 2 previous numbers in the sequence. For example, when you start with 0 and 1, you get the following sequence.
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+
+This is the Fibonacci sequence that we all know and love.
+
+### Task:
+
+Our task is, given any number, find the difference between that number and the first Fibonacci number greater than our number.
+
+For example, given a number 10, we would want our function to return the number 3. The next Fibonacci number greater than 10 is 13, therefore the difference between 13 and 10 is 3.
+
+If the input is a Fibonacci number, we return 0.
+
+---
+
 <br /><br />
 <sub>Written by <a href="www.github.com/Edd-Cole">Edd Cole</a></sub>
