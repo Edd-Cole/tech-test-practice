@@ -1,5 +1,5 @@
-const convertToRoman = require("../functions/1. Intermediate/5. convertToRoman.js");
-const convertToRomanSol = require("../solutions/1. Intermediate/5. convertToRoman.solution.js");
+const convertToRoman = require("../functions/1. Intermediate/6. convertToRoman.js");
+const convertToRomanSol = require("../solutions/1. Intermediate/6. convertToRoman.solution.js");
 
 describe("Convert to Roman Numerals", () => {
     test("Returns 'I' when passed 1", () => {

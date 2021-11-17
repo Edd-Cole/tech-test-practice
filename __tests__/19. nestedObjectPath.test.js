@@ -1,4 +1,4 @@
-const nestedObjectPath = require("../functions/4. Advanced/18. nestedObjectPath.js");
+const nestedObjectPath = require("../functions/4. Advanced/19. nestedObjectPath.js");
 
 describe("nestedObjectPath", () => {
     test("Returns an empty string if the key does not exist in the object", () => {
