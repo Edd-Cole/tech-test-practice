@@ -84,13 +84,28 @@ We want to find out if any 2 numbers are co-prime. Are 100453 and 3417 co-prime?
 Write a function that will test for this and return true if the numbers are co-prime and false if they aren't.
 
 ---
-## 3. Inventory Update
+## 3. Difference to Next Fibonacci Number:
+I'm sure you've heard of the Fibonacci sequence. It's the set of numbers that you get when you add the two previous numbers in the sequence you get your next number. This sequence starts of with the numbers 0 & 1, giving us the following sequence:
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+
+This is the Fibonacci sequence that we all know and love.
+
+### Task:
+Our task is, given any number, find the difference between that number and the first Fibonacci number greater than our given number.
+
+For example, given a number, 10, we want our function to return 3. This is because 13 is the first Fibonacci number that is greater than 10, thus 13 - 10 = 3.
+
+If the given number is a Fibonacci number, return 0;
+
+---
+## 4. Inventory Update
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/inventory-update">link</a>
 ### Task:
 Compare and update the inventory stored in a 2D array against a second 2D array of a fresh delivery. Update the current existing inventory item quantities (in arr1). If an item cannot be found, add the new item and quantity into the inventory array. The returned inventory array should be in alphabetical order by item.
 
 ---
-## 4. Special Pythagorean Triplet
+## 5. Special Pythagorean Triplet
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-9-special-pythagorean-triplet">link</a>
 A Pythagorean triplet is a set of three natural numbers (a posh maths term for any whole number greater than or equal to 0), a < b < c, for which,
 a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.
@@ -105,7 +120,7 @@ We want to find a special Pythagorean Triplet which sums to some desired number,
 Write a function that will allow us to find out this product abc.
 
 ---
-## 5. Convert To Roman Numerals
+## 6. Convert To Roman Numerals
 This is one that I used to hear about from candidates when I used to be a Tech Recruiter! I thought we should tackle this so we're better prepared for it if we ever face it in a real life tech test!
 
 If you need a reminder the Roman Numerals we'll be using are as follows:
@@ -124,7 +139,7 @@ We won't be interested in any Roman Numeral over 4,999 as the rules change once 
 Create a function that receives an integer between 1 and 4,999 which will then convert it into it's Roman Numeral counterpart.
 
 ---
-## 6. Implement Bubble Sort
+## 7. Implement Bubble Sort
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-bubble-sort">link</a>
 Bubble sort is one of the original sorting algorithms.
 
@@ -154,7 +169,7 @@ This section is to give you a better understanding of OOP. You may not have deal
 Getting a bit familiar with it now will save you a lot of hassle if it ever comes up in a tech test.
 
 ---
-## 7. Create a Stack Class
+## 8. Create a Stack Class
 I'm sure you remember this one from fundamentals... but if you don't, here's your chance to get to recreate it all from scratch!
 ### Task:
 Create a Stack class.
@@ -171,7 +186,7 @@ Your stack will need:
 - An autoFill() method
 
 ---
-## 8. Create some Shapes Classes
+## 9. Create some Shapes Classes
 Even more classes, but probably not in the way we're used to, yet. Here we're going to explore some super classes. This will help us get used to inheritance and abstraction! I hope you enjoy this.
 
 Inheritance is a way of "passing down" information from one class to another. All the information contained by the parent class can be accessed by the child class; the properties it uses and the methods that can be invoked.
@@ -202,7 +217,7 @@ Our Cube and Sphere classes are going to need to define these things further:
 
 ---
 
-## 9. Fix the Number Calculator Errors:
+## 10. Fix the Number Calculator Errors:
 We had an idea where we would create a class that would help us calculate numbers for us. We would give it a group of numbers and then our calculator would apply its operations we want when we ask it to.
 
 ### Task:
@@ -218,7 +233,7 @@ These are the things we need you to help us fix.
 
 ---
 
-## 10. Binary Search Tree
+## 11. Binary Search Tree
 In Computer Science, a tree is a data structure wherein the data is organised down branches relative to it's "size" against a value. A Binary Tree is a tree that for each value in the tree, the tree offers 2 branches to follow depending on if the value we are comparing is greater or smaller than the value in the tree. Here's a diagram for reference...
 <br /><br />
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Yz2ZINJDIFiLFfGonPKMvQHaG8%26pid%3DApi&f=1" width="20%"/>
@@ -271,7 +286,7 @@ Creating efficient and scalable algorithms is a very important concept in Comput
 To learn more about Time Complexity and Big O notation, follow this <a href="https://app.codility.com/programmers/lessons/3-time_complexity/">link</a>. It will give you a brief introduction into this key concept.
 
 ---
-## 11. Frog Jump
+## 12. Frog Jump
 ### Codility <a href="https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/">link</a>
 A small frog wants to get to the other side of the road. The frog is currently located at position a, and wants to get to a position greater than or equal to b. The small frog always jumps a fixed distance, d.
 
@@ -280,14 +295,14 @@ Create a function that counts the minimal number of jumps that the small frog mu
 
 ---
 
-## 12. Add the Numbers
+## 13. Add the Numbers
 I'm sure you've come across this one before. And it's a great intro into Time Complexity along with Frog Jump.
 
 ### Task:
 Add all the numbers from 0 to sum number n (n > 0)... But this time, you have to complete it in the time limit!
 
 ---
-## 13. Passing Cars...
+## 14. Passing Cars...
 ### Codility <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/">link</a>
 Imagine, you're on a road travelling west to east, and you pass 5 cars. You know you have made 5 passings. But, what if you have a car in front of you? In total, there have been 10 passings. And a car behind you? There are now 15 passes. Quite simple.
 
@@ -305,7 +320,7 @@ This test is also timed, so make sure your algorithm is <a href="https://rob-bel
 As an aside, if your solution is not time efficient, you will be waiting for jest for a very long time! My computer runs the 1,000,000 sized array in about 3 minutes. The aim is to get this down to 5 seconds. The links will help!
 
 ---
-## 14. Implement Quick Sort
+## 15. Implement Quick Sort
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort">link</a>
 Earlier, I asked you to sort an array of values using Bubble Sort.
 
@@ -349,7 +364,7 @@ But, if you're a level above, any tech test you do will demonstrate your skills 
 Give these a shot if you are aiming for BJSS, Infinity Works or any other Academy programme. This section will hold you in good stead.
 
 ---
-## 15. Find the Symmetric Difference
+## 16. Find the Symmetric Difference
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/find-the-symmetric-difference">link</a>
 
 The mathematical term symmetric difference (△ or ⊕) of two sets is the set of elements which are in either of the two sets but not in both. For example, for sets A = {1, 2, 3} and B = {2, 3, 4}, A △ B = {1, 4}.
@@ -360,7 +375,7 @@ Symmetric difference is a binary operation, which means it operates on only two 
 Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
 
 ---
-## 16. Happy Prime Numbers
+## 17. Happy Prime Numbers
 Do you watch Doctor Who? Did you watch the 2007 series with David Tennant and Freema Agyeman? And if so, did you watch the episode 42?
 
 If you didn't don't worry, I'll explain this task here!
@@ -383,7 +398,7 @@ A happy prime is a prime number that will also hit one when you apply this "happ
 Our task is to create a function that will determine whether a number is a happy prime number or not. The function should return true or false.
 
 ---
-## 17. Recover the Secret String
+## 18. Recover the Secret String
 ### Code Wars <a href="https://www.codewars.com/kata/53f40dff5f9d31b813000774/train/javascript">link</a>
 In this challenge, we are given an array of arrays. The sub-array are of length 3 and are triples of letters that, when all combined, can be used to discover a secret message.
 
@@ -403,7 +418,7 @@ A note to add, that the secret message will only ever use each letter once, and 
 Our challenge is to write an algorithm that can reveal the secret string.
 
 ---
-## 18. What is the Nested Object Pathway?
+## 19. What is the Nested Object Pathway?
 Consider this, you're working in MongoDB and want to sort your documents by any key. The problem though is that you have nested objects within nested objects. Now, you could hard code this, but... the conditional logic will get very big very quickly. So, instead you decide to build a function that will give you the object key path that you need. For example let's say you want to sort this array of "objects" by price:
 
 const item = {
