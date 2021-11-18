@@ -1,4 +1,4 @@
-# Tech Test Practice
+# <strong>Tech Test Practice</strong>
 ---
 ## How to use:
 Read the following 2 points first, and then you can read the tech test tasks a bit lower down!
@@ -441,5 +441,6 @@ You would need the object path "pricing.price". But, if you want to sort by weig
 Build a nestedObjectPath that takes an object and a string that will return the pathway through the object that get's us to our desired key-value pair of a nested object (no arrays will be present). If there are duplicate key-value pairs, we want to find the first one that does not contain an object as the value.
 
 ---
+
 <br /><br />
 <sub>Written by <a href="www.github.com/Edd-Cole">Edd Cole</a></sub>
