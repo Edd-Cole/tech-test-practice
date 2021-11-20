@@ -191,7 +191,7 @@ This section is to give you a better understanding of OOP. You may not have deal
 Getting a bit familiar with it now will save you a lot of hassle if it ever comes up in a tech test.
 
 ---
-## 8. Create a Stack Class
+## 9. Create a Stack Class
 I'm sure you remember this one from fundamentals... but if you don't, here's your chance to get to recreate it all from scratch!
 ### Task:
 Create a Stack class.
@@ -208,7 +208,7 @@ Your stack will need:
 - An autoFill() method
 
 ---
-## 9. Create some Shapes Classes
+## 10. Create some Shapes Classes
 Even more classes, but probably not in the way we're used to, yet. Here we're going to explore some super classes. This will help us get used to inheritance and abstraction! I hope you enjoy this.
 
 Inheritance is a way of "passing down" information from one class to another. All the information contained by the parent class can be accessed by the child class; the properties it uses and the methods that can be invoked.
@@ -239,7 +239,7 @@ Our Cube and Sphere classes are going to need to define these things further:
 
 ---
 
-## 10. Fix the Number Calculator Errors:
+## 11. Fix the Number Calculator Errors:
 We had an idea where we would create a class that would help us calculate numbers for us. We would give it a group of numbers and then our calculator would apply its operations we want when we ask it to.
 
 ### Task:
@@ -255,7 +255,7 @@ These are the things we need you to help us fix.
 
 ---
 
-## 11. Binary Search Tree
+## 12. Binary Search Tree
 In Computer Science, a tree is a data structure wherein the data is organised down branches relative to it's "size" against a value. A Binary Tree is a tree that for each value in the tree, the tree offers 2 branches to follow depending on if the value we are comparing is greater or smaller than the value in the tree. Here's a diagram for reference...
 <br /><br />
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Yz2ZINJDIFiLFfGonPKMvQHaG8%26pid%3DApi&f=1" width="20%"/>
@@ -308,7 +308,7 @@ Creating efficient and scalable algorithms is a very important concept in Comput
 To learn more about Time Complexity and Big O notation, follow this <a href="https://app.codility.com/programmers/lessons/3-time_complexity/">link</a>. It will give you a brief introduction into this key concept.
 
 ---
-## 12. Frog Jump
+## 13. Frog Jump
 ### Codility <a href="https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/">link</a>
 A small frog wants to get to the other side of the road. The frog is currently located at position a, and wants to get to a position greater than or equal to b. The small frog always jumps a fixed distance, d.
 
@@ -317,14 +317,14 @@ Create a function that counts the minimal number of jumps that the small frog mu
 
 ---
 
-## 13. Add the Numbers
+## 14. Add the Numbers
 I'm sure you've come across this one before. And it's a great intro into Time Complexity along with Frog Jump.
 
 ### Task:
 Add all the numbers from 0 to sum number n (n > 0)... But this time, you have to complete it in the time limit!
 
 ---
-## 14. Passing Cars...
+## 15. Passing Cars...
 ### Codility <a href="https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/">link</a>
 Imagine, you're on a road travelling west to east, and you pass 5 cars. You know you have made 5 passings. But, what if you have a car in front of you? In total, there have been 10 passings. And a car behind you? There are now 15 passes. Quite simple.
 
@@ -342,7 +342,7 @@ This test is also timed, so make sure your algorithm is <a href="https://rob-bel
 As an aside, if your solution is not time efficient, you will be waiting for jest for a very long time! My computer runs the 1,000,000 sized array in about 3 minutes. The aim is to get this down to 5 seconds. The links will help!
 
 ---
-## 15. Implement Quick Sort
+## 16. Implement Quick Sort
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-quick-sort">link</a>
 Earlier, I asked you to sort an array of values using Bubble Sort.
 
@@ -386,7 +386,7 @@ But, if you're a level above, any tech test you do will demonstrate your skills 
 Give these a shot if you are aiming for BJSS, Infinity Works or any other Academy programme. This section will hold you in good stead.
 
 ---
-## 16. Find the Symmetric Difference
+## 17. Find the Symmetric Difference
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/find-the-symmetric-difference">link</a>
 
 The mathematical term symmetric difference (△ or ⊕) of two sets is the set of elements which are in either of the two sets but not in both. For example, for sets A = {1, 2, 3} and B = {2, 3, 4}, A △ B = {1, 4}.
@@ -395,29 +395,6 @@ Symmetric difference is a binary operation, which means it operates on only two 
 
 ### Task:
 Create a function that takes two or more arrays and returns an array of their symmetric difference. The returned array must contain only unique values (no duplicates).
-
----
-## 17. Happy Prime Numbers
-Do you watch Doctor Who? Did you watch the 2007 series with David Tennant and Freema Agyeman? And if so, did you watch the episode 42?
-
-If you didn't don't worry, I'll explain this task here!
-
-In the episode, the Doctor and Martha have to switch on the engines of a space ship because if they don't they'll crash into a sun.
-
-However, there are numerous doors that have been locked and to open them they have to answer a round of multiple questions for each door.
-
-One of the questions is, find the next number in the sequence: 313, 331, 367, ...
-
-The answer is 379. Here's the <a href="https://www.youtube.com/watch?v=ee2If8jSxUo">clip</a> if you want to watch it. With a very quick explanation of a happy prime.
-
-A happy number is a number that when you break it down into it's individual digits, square each one and then add them back together will give you a new number. You then repeat the same process with this new number. If you eventually hit 1 after repeating this process as many times as you need, you have a happy number!
-
-For example: 68 --> 6<sup>2</sup> + 8<sup>2</sup> --> 36 + 64 --> 100 --> 1<sup>2</sup> + 0<sup>2</sup> + 0<sup>2</sup> --> 1 + 0 + 0 --> 1; 68 is a happy number.
-
-A happy prime is a prime number that will also hit one when you apply this "happy" process to it. Here's a <a href="https://en.wikipedia.org/wiki/Happy_number">link</a> for more info.
-
-### Task:
-Our task is to create a function that will determine whether a number is a happy prime number or not. The function should return true or false.
 
 ---
 ## 18. Recover the Secret String
@@ -440,7 +417,30 @@ A note to add, that the secret message will only ever use each letter once, and 
 Our challenge is to write an algorithm that can reveal the secret string.
 
 ---
-## 19. What is the Nested Object Pathway?
+## 19. Happy Prime Numbers
+Do you watch Doctor Who? Did you watch the 2007 series with David Tennant and Freema Agyeman? And if so, did you watch the episode 42?
+
+If you didn't don't worry, I'll explain this task here!
+
+In the episode, the Doctor and Martha have to switch on the engines of a space ship because if they don't they'll crash into a sun.
+
+However, there are numerous doors that have been locked and to open them they have to answer a round of multiple questions for each door.
+
+One of the questions is, find the next number in the sequence: 313, 331, 367, ...
+
+The answer is 379. Here's the <a href="https://www.youtube.com/watch?v=ee2If8jSxUo">clip</a> if you want to watch it. With a very quick explanation of a happy prime.
+
+A happy number is a number that when you break it down into it's individual digits, square each one and then add them back together will give you a new number. You then repeat the same process with this new number. If you eventually hit 1 after repeating this process as many times as you need, you have a happy number!
+
+For example: 68 --> 6<sup>2</sup> + 8<sup>2</sup> --> 36 + 64 --> 100 --> 1<sup>2</sup> + 0<sup>2</sup> + 0<sup>2</sup> --> 1 + 0 + 0 --> 1; 68 is a happy number.
+
+A happy prime is a prime number that will also hit one when you apply this "happy" process to it. Here's a <a href="https://en.wikipedia.org/wiki/Happy_number">link</a> for more info.
+
+### Task:
+Our task is to create a function that will determine whether a number is a happy prime number or not. The function should return true or false.
+
+---
+## 20. What is the Nested Object Pathway?
 Consider this, you're working in MongoDB and want to sort your documents by any key. The problem though is that you have nested objects within nested objects. Now, you could hard code this, but... the conditional logic will get very big very quickly. So, instead you decide to build a function that will give you the object key path that you need. For example let's say you want to sort this array of "objects" by price:
 
 const item = {
