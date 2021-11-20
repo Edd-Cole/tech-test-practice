@@ -55,6 +55,8 @@ After this you are going to need to install all the dependencies that are associ
 ```http
 npm install
 ```
+Lastly, make sure you update your test script with "jest" in the package.json.
+
 This should mean you're ready to go!
 ### <span id="structure">Structure</span>:
 The repo is set up into 3 main directory structures within the root and then this is divided into 4 main branches where you can practice Intermediate tech tests, Class based tech tests, <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> & <a href="https://codility.com/media/train/1-TimeComplexity.pdf">Time Complexity</a> tech tests, and Advanced tech tests.
