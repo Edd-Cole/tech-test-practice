@@ -1,4 +1,4 @@
-# Tech Test Practice
+# <strong>Tech Test Practice</strong>
 ---
 ## How to use:
 Read the following 2 points first, and then you can read the tech test tasks a bit lower down!
