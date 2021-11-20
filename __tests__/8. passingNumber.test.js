@@ -1,4 +1,4 @@
-const passingNumber = require("../functions/1. Intermediate/passingNumber.js");
+const passingNumber = require("../functions/1. Intermediate/8. passingNumber.js");
 
 describe("Passing Number", () => {
     test("Returns 0 when input num less than the value to find", () => {
@@ -25,7 +25,8 @@ describe("Passing Number", () => {
     })
 
     test("Returns number of occurences of value when num is much higher than value (num >> value)", () => {
-        expect(passingNumber(100, 1)).toBe(21)
+        expect(passingNumber(100, 1)).toBe(21);
+        expect(passingNumber(100, 9)).toBe(20);
         expect(passingNumber(1000, 10)).toBe(21);
         expect(passingNumber(909, 9)).toBe(191);
     })
