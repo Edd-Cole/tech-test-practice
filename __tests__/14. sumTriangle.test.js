@@ -1,4 +1,4 @@
-const sumTriangle = require("../functions/3. Big O Notation/13. sumTriangle.js");
+const sumTriangle = require("../functions/3. Big O Notation/14. sumTriangle.js");
 
 describe("Calculate the Sum of Square and Triangle Numbers", () => {
     test("Returns 0 when input is 0", () => {

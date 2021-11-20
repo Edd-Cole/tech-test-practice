@@ -1,4 +1,4 @@
-const implementQuickSort = require("../functions/3. Big O Notation/15. implementQuickSort.js");
+const implementQuickSort = require("../functions/3. Big O Notation/16. implementQuickSort.js");
 const fs = require("fs/promises");
 
 describe("Quick Sort Algorithm", () => {
