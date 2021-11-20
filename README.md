@@ -1,5 +1,48 @@
 # <strong>Tech Test Practice</strong>
 ---
+## Contents:
+<ul>
+<li><a href="">How to use</a></li>
+<ul>
+<li><a>Setting it up</a></li>
+<li><a>Structure</a></li>
+</ul>
+<li><a>Using Solutions</a></li>
+<li><a>Section 1: Intermediate</a></li>
+<ul>
+<li><a>1. Which Doors are Open?</a></li>
+<li><a>2. Are these Numbers Co-Prime?</a></li>
+<li><a>3. Difference to Next Fibonacci Number</a></li>
+<li><a>4. Inventory Update</a></li>
+<li><a>5. Special Pythagorean Triplet</a></li>
+<li><a>6. Convert to Roman Numerals</a></li>
+<li><a>7. Implement Bubble Sort</a></li>
+<li><a>8. How Many Passes of a Value do we make when Counting to a Number?</a></li>
+</ul>
+<li><a>Section 2. Classes</a></li>
+<ul>
+<li><a>9. Create a Stack Class</a></li>
+<li><a>10. Create some Shapes Classes</a></li>
+<li><a>11. Fix the Number Calculator Errors</a></li>
+<li><a>12. Binary Search Tree</a></li>
+</ul>
+<li><a>Section 3. Big O Notation & Time Complexity</a></li>
+<ul>
+<li><a>13. Frog Jump</a></li>
+<li><a>14. Add the Numbers</a></li>
+<li><a>15. Passing Cars...</a></li>
+<li><a>16. Implement Quick Sort</a></li>
+</ul>
+<li><a>Section 4. Advanced</a></li>
+<ul>
+<li><a>17. Find the Symmetric Difference</a></li>
+<li><a>18. Recover the Secret String</a></li>
+<li><a>19. Happy Prime Numbers</a></li>
+<li><a>20. What is the Nested Object Pathway?</a></li>
+</ul>
+</ul>
+
+---
 ## How to use:
 Read the following 2 points first, and then you can read the tech test tasks a bit lower down!
 ### Setting it up:
@@ -161,7 +204,7 @@ As we have made changes, we would need to loop again to make sure that the array
 Our goal here is to recreate the bubble sort method on an array of numbers. BUT, we do not want to mutate the original array or them to have the same memory reference!
 
 ---
-## 8. How Many Passes of a Value Do We Make When Counting to a Number?
+## 8. How Many Passes of a Value do we make when Counting to a Number?
 Have you come across this question?
 
 For all the numbers between 1 - 100, how many 9's are there?
@@ -463,5 +506,14 @@ You would need the object path "pricing.price". But, if you want to sort by weig
 Build a nestedObjectPath that takes an object and a string that will return the pathway through the object that get's us to our desired key-value pair of a nested object (no arrays will be present). If there are duplicate key-value pairs, we want to find the first one that does not contain an object as the value.
 
 ---
+## Summary:
+I hope you've enjoyed these tech tests, some have been taken from (and credited) from the internet and others I have thought up. All the solutions given are ones I have created myself, and annotated by myself too.
+
+If you have enjoyed them and found them useful, please leave a star on this GitHub repo at <a href="https://github.com/Edd-Cole/tech-test-practice">tech-test-practice</a>.
+
+Any and all feedback is appreciated. If you have a tech test that you think will help others, send it to me and I can pop it in.
+
+Best of luck securing your next role in tech!
+
 <br /><br />
 <sub>Written by <a href="www.github.com/Edd-Cole">Edd Cole</a></sub>
