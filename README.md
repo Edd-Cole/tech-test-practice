@@ -40,6 +40,7 @@
 <li><a>19. Happy Prime Numbers</a></li>
 <li><a>20. What is the Nested Object Pathway?</a></li>
 </ul>
+<li><a>Summary</a></li>
 </ul>
 
 ---
