@@ -225,7 +225,7 @@ Don't forget 99 has 2 9's!
 But what if we wanted to know how many 7's there are counting up to 7,513? Or, 24's there are counting up to 21,846?
 
 ### Task:
-Create a function that accepts a 2 numbers, 1 to count up to (e.g. 100) and the other to check against (e.g. 9), and return how many instances of that value occur when counting up to our first number. If our value occurs more than once in a number, count them a unique values!
+Create a function that accepts 2 numbers, 1 to count up to (e.g. 100) and the other to check against (e.g. 9), and return how many instances of that value occur when counting up to our first number. If our value occurs more than once in a number, count them a unique values!
 
 #### Challenge!!!!
 Can you make the function time and memory efficient??? Give this a shot if you have checked out Section 3 on Time Complexity!
@@ -263,9 +263,9 @@ Inheritance is a way of "passing down" information from one class to another. Al
 
 However, we can also overwrite methods if we decide a general rule doesn't help a specific child class case. For example, if we have a Triangle super class that calculates the longest side of any triangle given 2 sides, it could be a complicated expression involving trigonometry. But, in the case of right angled triangles, we would want to invoke a simpler method using the Pythagorean Theorem; longestSide = Math.sqrt(a<sup>2</sup> + b<sup>2</sup>). Much nicer!
 
-Abstraction is when we would overwrite the method each and every time for each sub class but, it would still make sense to have the method in the parent class. This is because it is still a method/behaviour of said class, but we don't complete the logic because it's too general to give any good information back.
+Abstraction is when we would overwrite the method each and every time for each sub class but, it would still make sense to have the method in the parent class. This is because it is still a method/behaviour of said class, so we don't complete the logic because it's too general to give any good information back.
 
-For exampe, this Shapes super class, it would make sense for it to have a getArea() method as every shape <strong>must</strong> have an area. But, how we calculate that area is going to be different for Triangles, Squares, Trapezoids, Pentagons, and any other regular/irregular shape. So, we say, "This shape class has an area, but there isn't enough information right now to use this method, but it makes sense for it to exist here". We can then overwrite this abstract method in any sub class.
+For exampe, in this Shapes super class, it would make sense for it to have a getArea() method as every shape <strong>must</strong> have an area. But, how we calculate that area is going to be different for Triangles, Squares, Trapezoids, Pentagons, and any other regular/irregular shape. So, we say, "This shape class has an area, but there isn't enough information right now to use this method, but it makes sense for it to exist here". We can then overwrite this abstract method in any sub class.
 
 An abstract class is any class that has at least 1 abstract method.
 ### Task:
