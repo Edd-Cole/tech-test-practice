@@ -64,24 +64,24 @@ The first directory you should see is __tests__. This is where the tests live fo
 ```http
 npm test [ADD_FILE_NAME_HERE]
 ```
-Next up are the functions, these will be where you can create the functions for the tests. This is where you will write your code. The functions are as bare as possible so you can build them up from scratch.
+Next up are the functions, this is where you will write your code. The functions are as bare as possible so you can build them up from scratch.
 
-Lastly, are the solutions. These are my solutions, annotated, so you can understand my thought process for each tech test. Try to tackle the tech tests on your own and only review my answers after you have succeeded in passing the tests, or have attempted multiple times. Trying once for 5 minutes and then looking at the answers isn't going to help you.
+Lastly, are the solutions. These are my solutions, annotated, so you can understand my thought process for each tech test. Try to tackle the tech tests on your own and only review my answers after you have succeeded in passing the tests, or have attempted multiple times without success. Trying once for 5 minutes and then looking at the answers won't help you get the most out of these challenges.
 
 ---
 ## <span id="usingSols">Using Solutions</span>:
 If you ever find yourself stuck, I have annotated solutions for you to look at.
 
-If you want to test whether they really do work, you can change the requires statements on the relevant to to "../solutions/[FILE_NAME_HERE]". This shall show you the tests working!
+If you want to test whether they really do work, you can change the requires statements on the relevant file to "../solutions/[FILE_NAME_HERE]". This will show you the tests working!
 
-I hope having solutions and guiding you through them will help you understand my solution and how to tackle the problem.
+I hope having solutions and guiding you through them will help your understanding and how to tackle the problems.
 
 Good luck and have fun!
 
 ---
 ## <span id="sec1">SECTION 1. INTERMEDIATE</span>:
 
-These tech tests are to help you get used to tougher challenges than you may have dealt with on the course.
+These tech tests are to help you get used to tougher challenges that you may face in interviews.
 
 If there is something you don't quite understand, I highly recommend you look it up. You would be expected to do so in <em>your</em> tech test!
 
@@ -125,9 +125,9 @@ Notice that neither 9 or 20 are prime themselves. This means that the numbers we
 But, 100 and 111 are co-prime because 100 is divisible only by 1, 2, 4, 5, 10, 20, 25, 50 and 100 whereas 111 is only divisible by 1, 3, 37, and 111. Thus, the only 2 numbers in both lists that are a factor of both 100 and 111 is 1. Hence, 100 and 111 are co-prime.
 
 ### Task:
-We want to find out if any 2 numbers are co-prime. Are 100453 and 3417 co-prime? What about these numbers: 79, 11111111? Are they co-prime?
+We want to find out if any 2 numbers are co-prime. Are 100,453 and 3,417 co-prime? What about these numbers: 81, 11,111,111? Are they co-prime?
 
-Write a function that will test for this and return true if the numbers are co-prime and false if they aren't.
+Write a function that will return true if the numbers are co-prime and false if they aren't.
 
 ---
 ## <span id="3">3. Difference to Next Fibonacci Number</span>
@@ -153,15 +153,17 @@ Compare and update the inventory stored in a 2D array against a second 2D array 
 ---
 ## <span id="5">5. Special Pythagorean Triplet</span>
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-9-special-pythagorean-triplet">link</a>
-A Pythagorean triplet is a set of three natural numbers (a posh maths term for any whole number greater than or equal to 0), a < b < c, for which,
+A Pythagorean triplet is a set of three natural numbers (0, 1, 2, 3, 4 , 5, ...), a < b < c, for which,
 a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.
 
 For example, 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 = 5<sup>2</sup>.
 
-Also, there exists exactly one Pythagorean triplet for which a + b + c = 1000.
+When we sum a and b and c we derive a new number. Some of these numbers can only be made by one set of Pythagorean triplets.
+
+For example, there exists exactly one Pythagorean triplet for which a + b + c = 1000.
 
 ### Task:
-We want to find a special Pythagorean Triplet which sums to some desired number, n. When we have a + b + c, we want to find the number that is the product of these three, a*b*c.
+We want to find a special Pythagorean triplet which sums to some desired number, n. When we have a + b + c, we want to find the number that is the product of these three, a*b*c.
 
 Write a function that will allow us to find out this product abc.
 
@@ -182,14 +184,14 @@ If you need a reminder the Roman Numerals we'll be using are as follows:
 We won't be interested in any Roman Numeral over 4,999 as the rules change once we hit 5,000.
 
 ### Task:
-Create a function that receives an integer between 1 and 4,999 which will then convert it into it's Roman Numeral counterpart.
+Create a function that receives an integer between 1 and 4,999 which will then convert it into its Roman Numeral counterpart.
 
 ---
 ## <span id="7">7. Implement Bubble Sort</span>
 ### Free Code Camp <a href="https://www.freecodecamp.org/learn/coding-interview-prep/algorithms/implement-bubble-sort">link</a>
 Bubble sort is one of the original sorting algorithms.
 
-The bubble sort method starts at the beginning of an unsorted array and 'bubbles up' unsorted values towards the end, iterating through the array until it is completely sorted. It does this by comparing adjacent items and swapping them if they are out of order. The method continues looping through the array until no swaps occur at which point the array is sorted.
+The bubble sort method starts at the beginning of an unsorted array and 'bubbles up' unsorted larger values towards the end of the array, continuing the process until the array is completely sorted. It does this by comparing adjacent items and swapping them if they are out of order. The method continues looping through the array until no swaps occur at which point the array is sorted.
 
 For example, let's say we have this array to start with:
 
@@ -210,7 +212,7 @@ Our goal here is to recreate the bubble sort method on an array of numbers. BUT,
 ## <span id="8">8. How Many Passes of a Value do we make when Counting to a Number?</span>
 Have you come across this question?
 
-For all the numbers between 1 - 100, how many 9's are there?
+For all the numbers between 0 - 100, how many 9's are there?
 
 The right answer is... 20!
 
@@ -255,13 +257,13 @@ Your stack will need:
 
 ---
 ## <span id="10">10. Create some Shapes Classes</span>
-Even more classes, but probably not in the way we're used to, yet. Here we're going to explore some super classes. This will help us get used to inheritance and abstraction! I hope you enjoy this.
+Even more classes, but probably not in the way we're used to, yet. Here, we're going to explore some super classes. This will help us get used to inheritance and abstraction! I hope you enjoy this.
 
 Inheritance is a way of "passing down" information from one class to another. All the information contained by the parent class can be accessed by the child class; the properties it uses and the methods that can be invoked.
 
 However, we can also overwrite methods if we decide a general rule doesn't help a specific child class case. For example, if we have a Triangle super class that calculates the longest side of any triangle given 2 sides, it could be a complicated expression involving trigonometry. But, in the case of right angled triangles, we would want to invoke a simpler method using the Pythagorean Theorem; longestSide = Math.sqrt(a<sup>2</sup> + b<sup>2</sup>). Much nicer!
 
-Abstraction is when we would overwrite the method each and every time for each sub class. It would still make sense to have it in the parent class, because it is still a method/behaviour of said class, but we don't complete the logic because it's too general to give any good information back.
+Abstraction is when we would overwrite the method each and every time for each sub class but, it would still make sense to have the method in the parent class. This is because it is still a method/behaviour of said class, but we don't complete the logic because it's too general to give any good information back.
 
 For exampe, this Shapes super class, it would make sense for it to have a getArea() method as every shape <strong>must</strong> have an area. But, how we calculate that area is going to be different for Triangles, Squares, Trapezoids, Pentagons, and any other regular/irregular shape. So, we say, "This shape class has an area, but there isn't enough information right now to use this method, but it makes sense for it to exist here". We can then overwrite this abstract method in any sub class.
 
