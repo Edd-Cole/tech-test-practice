@@ -44,12 +44,12 @@ describe("Passing Number", () => {
         expect(passingNumber(213796, 737)).toBe(624);
     })
 
-    describe("Time Efficiency Challenge & Memory Challenge! Can you make your's complete the tests in the given time limit & work with large numbers?", () => {
+    describe.skip("Time Efficiency Challenge & Memory Challenge! Can you make your's complete the tests in the given time limit & work with large numbers?", () => {
 
         // THIS TEST CASE BELOW IS TO SEE IF YOU WILL PASS THE LATER TESTS ---
-        // IF YOU FAIL THIS ONE AND TRY THE OTHERS, YOU WILL BE WAITING FOR A VERY LONG TIME!!!!!
+        // IF YOU FAIL THIS ONE AND TRY THE OTHERS, YOU WILL BE WAITING A VERY LONG TIME!!!!!
 
-        test("Time Efficiency test - If you fail this test, don't try the ones below!", () => {
+        test.only("Time Efficiency test - If you fail this test, don't try the ones below!", () => {
             const start = new Date();
             expect(passingNumber(100000, 7)).toBe(50000);
             expect(new Date() - start).toBeLessThan(100);
@@ -72,6 +72,36 @@ describe("Passing Number", () => {
             const start = new Date();
             expect(passingNumber(15337113, 3)).toBe(11209350);
             expect(new Date() - start).toBeLessThan(15000);
+        })
+
+        describe.skip("Ultra Time & Memory Efficiency Challenge!", () => {
+
+            // Only try these if the below test case passes, the most efficient algorithm I have takes 3 minutes to pass all the tests ---
+            // If you don't pass the one below it wil take hours to test if your memory doesn't crash first
+
+            test.only("Test here first, if you fail, don't try these below...", () => {
+                const start = new Date();
+                expect(passingNumber(2223451, 5)).toBe(1308987)
+                expect(new Date() - start).toBeLessThan(500)
+            })
+
+            test("Large number - 30 seconds", () => {
+                const start = new Date();
+                expect(passingNumber(103001121, 2)).toBe(82800324);
+                expect(new Date() - start).toBeLessThan(30000);
+            })
+
+            test("Hyper large number - 90 seconds", () => {
+                const start = new Date();
+                expect(passingNumber(502884731, 24)).toBe(45245598);
+                expect(new Date - start).toBeLessThan(90000);
+            })
+
+            test("Ultra large number - 180 seconds", () => {
+                const start = new Date();
+                expect(passingNumber(1200121103, 71)).toBe(94004621);
+                expect(new Date() - start).toBeLessThan(180000);
+            })
         })
     })
 })
