@@ -32,7 +32,7 @@ describe("Passing Number", () => {
     })
 
     test("Returns number of occurences of value for large nums", () => {
-        expect(passingNumber(1000, 1)).toBe(301)
+        expect(passingNumber(1000, 1)).toBe(301);
         expect(passingNumber(20000, 17)).toBe(1600);
         expect(passingNumber(93518, 62)).toBe(3765);
         expect(passingNumber(532887, 109)).toBe(2673);
@@ -55,7 +55,6 @@ describe("Passing Number", () => {
             expect(new Date() - start).toBeLessThan(100);
             expect(passingNumber(250000, 87)).toBe(9500);
             expect(new Date() - start).toBeLessThan(500);
-            validSolution = true;
         })
 
         test("Returns number of occurences for large values of num  - 15 seconds", () => {
