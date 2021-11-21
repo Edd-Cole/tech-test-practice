@@ -44,12 +44,12 @@ describe("Passing Number", () => {
         expect(passingNumber(213796, 737)).toBe(624);
     })
 
-    describe.skip("Time Efficiency Challenge & Memory Challenge! Can you make your's complete the tests in the given time limit & work with large numbers?", () => {
+    describe("Time Efficiency Challenge & Memory Challenge! Can you make your's complete the tests in the given time limit & work with large numbers?", () => {
 
         // THIS TEST CASE BELOW IS TO SEE IF YOU WILL PASS THE LATER TESTS ---
         // IF YOU FAIL THIS ONE AND TRY THE OTHERS, YOU WILL BE WAITING FOR A VERY LONG TIME!!!!!
 
-        test.only("Time Efficiency test - If you fail this test, don't try the ones below!", () => {
+        test("Time Efficiency test - If you fail this test, don't try the ones below!", () => {
             const start = new Date();
             expect(passingNumber(100000, 7)).toBe(50000);
             expect(new Date() - start).toBeLessThan(100);
