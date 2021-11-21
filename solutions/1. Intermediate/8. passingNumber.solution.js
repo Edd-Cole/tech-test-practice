@@ -42,12 +42,17 @@ function passingNumberEfficient(number, value) {
 }
 
 function passingNumberSuperEfficient(number, value) {
-    const regex = new RegExp(value.toString(), "g");
+    // Create a regex using a look ahead to search for the value with the global flag, set occurencesOfValue to 0
+    const regex = new RegExp(`(?=${value})`, "g");
     let occurencesOfValue = 0;
 
+    // Loop up to number 
     for (let i = 0; i <= number; i++) {
+        // Search the current i for any and all matches with created regex
         const occurences = i.toString().match(regex);
+        // occurences exist, get the length, otherwise set to 0
         const countOccurences = occurences ? occurences.length : 0;
+        // Add occurences to occurencesOfValue
         occurencesOfValue += countOccurences;
     }
 
@@ -55,4 +60,4 @@ function passingNumberSuperEfficient(number, value) {
 }
 
 
-module.exports = { passingNumber, passingNumberEfficient }
+module.exports = { passingNumber, passingNumberEfficient, passingNumberSuperEfficient }
