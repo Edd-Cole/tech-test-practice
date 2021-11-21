@@ -1,5 +1,5 @@
 function passingNumber(number, value) {
-    const regex = new RegExp(value, "g");
+    const regex = new RegExp(`(?=${value})`, "g");
     let occurencesOfValue = 0;
 
     for (let i = 0; i <= number; i++) {
