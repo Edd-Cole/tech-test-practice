@@ -19,7 +19,7 @@ function passingNumber(number, value) {
     return count;
 }
 
-// Solution for passing the Time Efficiency and Memory Efficiency challenges!
+// Solution for passing the Time Efficiency and Memory Efficiency challenges - Part 1!
 
 function passingNumberEfficient(number, value) {
     // Define occurencesOfValue, a numString and the length of value;
@@ -40,6 +40,8 @@ function passingNumberEfficient(number, value) {
 
     return occurencesOfValue;
 }
+
+// Solution for Time & Memory challenge - Part 2
 
 function passingNumberSuperEfficient(number, value) {
     // Create a regex using a look ahead to search for the value with the global flag, set occurencesOfValue to 0
