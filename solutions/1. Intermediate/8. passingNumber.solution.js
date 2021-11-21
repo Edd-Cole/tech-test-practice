@@ -22,35 +22,24 @@ function passingNumber(number, value) {
 // Solution for passing the Time Efficiency and Memory Efficiency challenges!
 
 function passingNumberEfficient(number, value) {
-    // Define a count, a string, the length of value and an array of possible numbers from num
-    let count = 0;
+    // Define occurencesOfValue, a numString and the length of value;
+    let occurencesOfValue = 0;
     let numString = "";
     const length = value.toString().length
-    const nums = [];
 
     // Loop up to the value of number concatenating each number into a string, seperated by a comma
     for (let i = 0; i <= number; i++) {
         numString += i + ",";
     }
 
-    // Loop through the numString adding
+    // Loop through numString, checking if a section of the string matches our value, if so increase occurencesOfValue
     for (let i = 0; i < numString.length; i++) {
-        // Take a section of numString of length
-        const numSection = numString.slice(i, i + length);
-        // If the section has a comma in it discard it as the values come from 2 different numbers and will give an incorrect result, otherwise
-        // the section is from 1 number and can be added into our candidate array, nums, for testing all instances of value.
-        // This if statement helps memory efficiency of this function
-        if (!numSection.includes(",")) {
-            nums[nums.length] = numSection;
-        }
+        if (numString.slice(i, i + length) == value)
+            occurencesOfValue++;
     }
 
-    // Loop through each num of our candidate array and increment count by 1 if num is a match
-    nums.forEach(num => {
-        if (num == value) count++;
-    })
-
-    return count;
+    return occurencesOfValue;
 }
+
 
 module.exports = { passingNumber, passingNumberEfficient }

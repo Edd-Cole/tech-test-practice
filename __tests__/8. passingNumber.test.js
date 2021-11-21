@@ -38,6 +38,12 @@ describe("Passing Number", () => {
         expect(passingNumber(532887, 109)).toBe(2673);
     })
 
+    test("Returns number of occurences of value when value is 'repeatable'", () => {
+        expect(passingNumber(3011, 111)).toBe(13);
+        expect(passingNumber(106732, 101)).toBe(1317);
+        expect(passingNumber(213796, 737)).toBe(624);
+    })
+
     describe.skip("Time Efficiency Challenge & Memory Challenge! Can you make your's complete the tests in the given time limit & work with large numbers?", () => {
 
         // THIS TEST CASE BELOW IS TO SEE IF YOU WILL PASS THE LATER TESTS ---
@@ -47,7 +53,7 @@ describe("Passing Number", () => {
             const start = new Date();
             expect(passingNumber(100000, 7)).toBe(50000);
             expect(new Date() - start).toBeLessThan(100);
-            expect(passingNumber(250000, 101)).toBe(1800);
+            expect(passingNumber(250000, 87)).toBe(9500);
             expect(new Date() - start).toBeLessThan(500);
             validSolution = true;
         })
@@ -55,14 +61,14 @@ describe("Passing Number", () => {
         test("Returns number of occurences for large values of num  - 15 seconds", () => {
             const start = new Date();
             expect(passingNumber(526100, 91)).toBe(20721);
-            expect(new Date() - start).toBeLessThan(1500)
-            expect(passingNumber(1000000, 208)).toBe(4000);
-            expect(new Date() - start).toBeLessThan(5000);
+            expect(new Date() - start).toBeLessThan(2000)
+            expect(passingNumber(1000000, 28)).toBe(50000);
+            expect(new Date() - start).toBeLessThan(7000);
             expect(passingNumber(3739911, 17)).toBe(290199);
             expect(new Date() - start).toBeLessThan(15000);
         })
 
-        test("Is it efficient for your memory too??? - If it isn't the Node will auto exit the jest testing suite without any feedback... .only this test! - 15 seconds ", () => {
+        test("Returns occurences for larger values of num - 15 seconds", () => {
             const start = new Date();
             expect(passingNumber(15337113, 3)).toBe(11209350);
             expect(new Date() - start).toBeLessThan(15000);
