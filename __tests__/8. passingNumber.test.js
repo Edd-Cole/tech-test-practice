@@ -78,7 +78,7 @@ describe("Passing Number", () => {
             // Only try these if the below test case passes, the most efficient algorithm I have takes 3 minutes to pass all the tests ---
             // If you don't pass the one below it wil take hours to test if your memory doesn't crash first
 
-            test.only("Test here first, if you fail, don't try these below...", () => {
+            test.only("Test here first, if you fail, don't try the tests below...", () => {
                 const start = new Date();
                 expect(passingNumber(2223451, 5)).toBe(1308987)
                 expect(new Date() - start).toBeLessThan(500)
