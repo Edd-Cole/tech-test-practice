@@ -42,6 +42,7 @@ describe("Passing Number", () => {
         expect(passingNumber(3011, 111)).toBe(13);
         expect(passingNumber(106732, 101)).toBe(1317);
         expect(passingNumber(213796, 737)).toBe(624);
+        expect(passingNumber(644891, 11)).toBe(36399);
     })
 
     describe.skip("Time Efficiency Challenge & Memory Challenge! Can you make your's complete the tests in the given time limit & work with large numbers?", () => {
