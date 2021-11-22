@@ -12,8 +12,9 @@ function sym(...args) {
 
     // Loop through all the sets in the sets array
     for (const set of sets) {
-        // Add the value in the set into an object as a key with a boolean of true if not in the set, otherwise set the value to false
+        // Loop through all the numbers in the set
         for (const num of set) {
+            // If number exists as a key in obj, set value to false, otherwise set key-value pair to {... , num: true}
             obj[num] ? obj[num] = false : obj[num] = true;
         }
     }
