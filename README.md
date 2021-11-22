@@ -227,10 +227,10 @@ But what if we wanted to know how many 7's there are counting up to 7,513? Or, 2
 ### Task:
 Create a function that accepts 2 numbers, 1 to count up to (e.g. 100) and the other to check against (e.g. 9), and return how many instances of that value occur when counting up to our first number. If our value occurs more than once in a number, count them a unique values!
 
-#### Challenge!!!!
-Can you make the function time and memory efficient??? Give this a shot if you have checked out Section 3 on Time Complexity!
+#### Challenge!!!! - Optional!
+Can you make the function time efficient??? Give this a shot if you have checked out Section 3 on Time Complexity!
 
-#### Extra Challenge!!!!
+#### Extra Challenge!!!! - Optional!
 Can you make the function work for ultra large numbers... For this you will need to consider memory resources and time efficiency!
 
 ---
