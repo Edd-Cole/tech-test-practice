@@ -45,62 +45,31 @@ describe("Passing Number", () => {
         expect(passingNumber(644891, 11)).toBe(36399);
     })
 
-    describe.skip("Time Efficiency Challenge & Memory Challenge! Can you make your's complete the tests in the given time limit & work with large numbers?", () => {
+    describe("Time Efficiency Challenge - Part 1", () => {
 
         // THIS TEST CASE BELOW IS TO SEE IF YOU WILL PASS THE LATER TESTS ---
         // IF YOU FAIL THIS ONE AND TRY THE OTHERS, YOU WILL BE WAITING A VERY LONG TIME!!!!!
 
-        test.only("Time Efficiency test - If you fail this test, don't try the ones below!", () => {
+        test.only("Can solve large numbers within a 6 second time limit", () => {
             const start = new Date();
             expect(passingNumber(100000, 7)).toBe(50000);
             expect(new Date() - start).toBeLessThan(100);
             expect(passingNumber(250000, 87)).toBe(9500);
             expect(new Date() - start).toBeLessThan(500);
+            expect(passingNumber(1567133, 0)).toBe(876124);
+            expect(new Date() - start).toBeLessThan(6000);
         })
 
-        test("Returns number of occurences for large values of num  - 15 seconds", () => {
-            const start = new Date();
-            expect(passingNumber(526100, 91)).toBe(20721);
-            expect(new Date() - start).toBeLessThan(2000)
-            expect(passingNumber(1000000, 28)).toBe(50000);
-            expect(new Date() - start).toBeLessThan(7000);
-            expect(passingNumber(3739911, 17)).toBe(290199);
-            expect(new Date() - start).toBeLessThan(15000);
-        })
+        describe("Time & Memory Efficiency Challenge - Part 2!", () => {
 
-        test("Returns occurences for larger values of num - 15 seconds", () => {
-            const start = new Date();
-            expect(passingNumber(15337113, 3)).toBe(11209350);
-            expect(new Date() - start).toBeLessThan(15000);
-        })
-
-        describe.skip("Ultra Time & Memory Efficiency Challenge!", () => {
-
-            // Only try these if the below test case passes, the most efficient algorithm I have takes 3 minutes to pass all the tests ---
-            // If you don't pass the one below it wil take hours to test if your memory doesn't crash first
-
-            test.only("Test here first, if you fail, don't try the tests below...", () => {
+            test.only("Can solve ultra large numbers within a 6 second time limit", () => {
                 const start = new Date();
-                expect(passingNumber(2223451, 5)).toBe(1308987)
-                expect(new Date() - start).toBeLessThan(500)
-            })
-
-            test("Large number - 30 seconds", () => {
-                const start = new Date();
-                expect(passingNumber(103001121, 2)).toBe(82800324);
-                expect(new Date() - start).toBeLessThan(30000);
-            })
-
-            test("Hyper large number - 90 seconds", () => {
-                const start = new Date();
-                expect(passingNumber(502884731, 24)).toBe(45245598);
-                expect(new Date - start).toBeLessThan(90000);
-            })
-
-            test("Ultra large number - 180 seconds", () => {
-                const start = new Date();
-                expect(passingNumber(1200121103, 71)).toBe(94004621);
-                expect(new Date() - start).toBeLessThan(180000);
+                expect(passingNumber(601711, 131)).toBe(2812)
+                expect(new Date() - start).toBeLessThan(100);
+                expect(passingNumber(2223451, 5)).toBe(1308987);
+                expect(new Date() - start).toBeLessThan(500);
+                expect(passingNumber(15713999, 8)).toBe(10355200);
+                expect(new Date() - start).toBeLessThan(6000);
             })
         })
     })
