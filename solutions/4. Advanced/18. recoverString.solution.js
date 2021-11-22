@@ -1,39 +1,35 @@
 const recoverString = (triplets) => {
-    //Define our secret string and our contenders for the next letter in our secret string
+    // Create an empty string and an empty set
     let secretString = "";
-    let nextPotentialLetters = [];
+    const nextPotentialLetters = new Set();
 
-    //Identify the letter that only appears in column 0
-    //Loop through and collect all the letters that appear in the first column, without repeats
+    // Loop through the first column adding each value to our set... Set auto discards duplicate values
     for (let i = 0; i < triplets.length; i++) {
-        if (!nextPotentialLetters.includes(triplets[i][0]))
-            nextPotentialLetters.push(triplets[i][0]);
+        nextPotentialLetters.add(triplets[i][0])
     }
-    //Loop through the rest of the subarrays, checking if our potential letters appear at index 1 or 2,
-    //if so, set them to undefined, as they cannot be the next letter in our string
+
+    // Loop through 2nd and 3rd columns, if a nPL's value exists in columns 2 or 3, delete it 
     for (let i = 0; i < triplets.length; i++) {
-        if (nextPotentialLetters.includes(triplets[i][1]) || nextPotentialLetters.includes(triplets[i][2])) {
-            const notNext = nextPotentialLetters.includes(triplets[i][1]) ? nextPotentialLetters.indexOf(triplets[i][1]) : nextPotentialLetters.indexOf(triplets[i][2]);
-            nextPotentialLetters[notNext] = undefined;
-        }
+        if (nextPotentialLetters.has(triplets[i][1]))
+            nextPotentialLetters.delete(triplets[i][1]);
+        else if (nextPotentialLetters.has(triplets[i][2]))
+            nextPotentialLetters.delete(triplets[i][2]);
     }
-    //Lastly, remove all undefined's from our contenders array, leaving us with our next letter
-    nextPotentialLetters = nextPotentialLetters.filter(letter => letter !== undefined);
 
-    //Concatenate next letter into our secret string
-    secretString += (nextPotentialLetters[0]);
+    // The remaining letter is the next letter of our secretString, add that letter into our secretString
+    const nextLetter = [...nextPotentialLetters][0]
+    secretString += nextLetter;
 
-    //Create new Triplets array with our letter from above removed from the sub-arrays
+    // Create a newTriplets array where we remove the nextLetter from the triplets
     const newTriplets = triplets.map(triplet => {
-        return triplet.filter(letter => letter !== nextPotentialLetters[0])
+        return triplet.filter(letter => letter !== nextLetter)
     })
 
-    //Repeat this finding, concatenation and removing process until only the last letter of the sentence is left
-    //And add the secret strings to the next letter in the string to find
+    // As long as an array exists with length greater than 1 we can use recursion to extract the next letter and concatenate it onto our current secretString
     if (triplets.some(triplet => triplet.length > 1))
         return secretString + recoverString(newTriplets)
 
-    //return our secret string
+    // Return our secretString for our recursion to build up
     return secretString;
 }
 
